@@ -2,7 +2,7 @@ import json
 import requests
 from urllib.parse import parse_qs, unquote, urlparse
 
-URL = "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/patt/protocols/trojan.txt"
+URL = "https://github.com/patterniha/Free-Configs/raw/refs/heads/main/configs.txt"
 OUT = "converted.json"
 
 TEMPLATE = {
