@@ -256,20 +256,19 @@
   ],
   "configs":[
     {
-      "remarks":"@DeltaKroneckerGithub | ec6716",
+      "remarks":"@DeltaKroneckerGithub | 4342a9",
       "proxy":{
-        "protocol":"vless",
+        "protocol":"trojan",
         "settings":{
           "address":"188.114.97.6",
           "port":443,
-          "id":"03790b11-e3d9-4966-859b-4e524bb04645",
-          "encryption":"none"
+          "password":"Telegram_healer_config"
         },
         "streamSettings":{
           "network":"ws",
           "security":"tls",
           "tlsSettings":{
-            "serverName":"vfuhf4iqn9b0-pyqr62d.qfem579emmb5z6ne0ejfcb.workers.dev",
+            "serverName":"z6y-daox0hyhdtdy.r720kpbyx2l3i406.workers.dev",
             "alpn":[
               "http/1.1"
             ],
@@ -277,8 +276,8 @@
             "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
           },
           "wsSettings":{
-            "path":"/vl/DfvlLmSkjWX3nTYInEaKodZ33E4cvX?ed=2560",
-            "host":"vfuhf4iqn9b0-pyqr62d.qfem579emmb5z6ne0ejfcb.workers.dev"
+            "path":"/tr/P9UvWEJwKNGrOjrb1ICnWGhH8iQGDcG?ed=2560",
+            "host":"z6y-daox0hyhdtdy.r720kpbyx2l3i406.workers.dev"
           },
           "finalmask":{
             "tcp":[
@@ -318,20 +317,20 @@
       }
     },
     {
-      "remarks":"By EbraSha 🌑 | fed292",
+      "remarks":"By EbraSha 📱 | d0b53d",
       "proxy":{
         "protocol":"vless",
         "settings":{
           "address":"188.114.97.6",
           "port":443,
-          "id":"87c467e9-f0af-4b03-8fbd-65fd375d3a26",
+          "id":"e9f44bc0-72c5-435b-9ab0-b1525823ad02",
           "encryption":"none"
         },
         "streamSettings":{
           "network":"ws",
           "security":"tls",
           "tlsSettings":{
-            "serverName":"pmpmppm.pages.dev",
+            "serverName":"gentle-rice-a9b4.460-a3e.workers.dev",
             "alpn":[
               "http/1.1"
             ],
@@ -339,8 +338,8 @@
             "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
           },
           "wsSettings":{
-            "path":"/?ed=2048",
-            "host":"pmpmppm.pages.dev"
+            "path":"/pyip=ProxyIP.US.CMLiussss.net",
+            "host":"gentle-rice-a9b4.460-a3e.workers.dev"
           },
           "finalmask":{
             "tcp":[
@@ -380,854 +379,7 @@
       }
     },
     {
-      "remarks":"CA 🇨🇦 | @Raydikalx | 4AFC95 | 853a7c",
-      "proxy":{
-        "protocol":"vless",
-        "settings":{
-          "address":"188.114.97.6",
-          "port":443,
-          "id":"c4394e27-baeb-422d-8905-a93f8e01126f",
-          "encryption":"none"
-        },
-        "streamSettings":{
-          "network":"xhttp",
-          "security":"tls",
-          "tlsSettings":{
-            "serverName":"cdn3.alihapp.com",
-            "alpn":[
-              "h2",
-              "http/1.1"
-            ],
-            "fingerprint":"unsafe",
-            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-          },
-          "finalmask":{
-            "tcp":[
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"tlshello",
-                  "lengths":[
-                    "0",
-                    "104",
-                    "1"
-                  ],
-                  "delays":[
-                    "0"
-                  ],
-                  "maxSplit":"0"
-                }
-              },
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"1-1",
-                  "lengths":[
-                    "114",
-                    "1"
-                  ],
-                  "delays":[
-                    "1"
-                  ],
-                  "maxSplit":"11"
-                }
-              }
-            ]
-          }
-        },
-        "tag":"proxy"
-      }
-    },
-    {
-      "remarks":"CA 🇨🇦 | @Raydikalx | AAE7AE | 6bfc91",
-      "proxy":{
-        "protocol":"vless",
-        "settings":{
-          "address":"188.114.97.6",
-          "port":443,
-          "id":"c4394e27-baeb-422d-8905-a93f8e01126f",
-          "encryption":"none"
-        },
-        "streamSettings":{
-          "network":"xhttp",
-          "security":"tls",
-          "tlsSettings":{
-            "serverName":"cdn5.alihapp.com",
-            "alpn":[
-              "h2",
-              "http/1.1"
-            ],
-            "fingerprint":"unsafe",
-            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-          },
-          "finalmask":{
-            "tcp":[
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"tlshello",
-                  "lengths":[
-                    "0",
-                    "104",
-                    "1"
-                  ],
-                  "delays":[
-                    "0"
-                  ],
-                  "maxSplit":"0"
-                }
-              },
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"1-1",
-                  "lengths":[
-                    "114",
-                    "1"
-                  ],
-                  "delays":[
-                    "1"
-                  ],
-                  "maxSplit":"11"
-                }
-              }
-            ]
-          }
-        },
-        "tag":"proxy"
-      }
-    },
-    {
-      "remarks":"By EbraSha ♦️ | 8f6e5b",
-      "proxy":{
-        "protocol":"vless",
-        "settings":{
-          "address":"188.114.97.6",
-          "port":443,
-          "id":"03790b11-e3d9-4966-859b-4e524bb04645",
-          "encryption":"none"
-        },
-        "streamSettings":{
-          "network":"ws",
-          "security":"tls",
-          "tlsSettings":{
-            "serverName":"vfuhf4iqn9b0-pyqr62d.qfem579emmb5z6ne0ejfcb.workers.dev",
-            "alpn":[
-              "http/1.1"
-            ],
-            "fingerprint":"unsafe",
-            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-          },
-          "wsSettings":{
-            "path":"/vl/JjVa6m2jVRuNUtMfj?ed=2560",
-            "host":"vfuhf4iqn9b0-pyqr62d.qfem579emmb5z6ne0ejfcb.workers.dev"
-          },
-          "finalmask":{
-            "tcp":[
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"tlshello",
-                  "lengths":[
-                    "0",
-                    "104",
-                    "1"
-                  ],
-                  "delays":[
-                    "0"
-                  ],
-                  "maxSplit":"0"
-                }
-              },
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"1-1",
-                  "lengths":[
-                    "114",
-                    "1"
-                  ],
-                  "delays":[
-                    "1"
-                  ],
-                  "maxSplit":"11"
-                }
-              }
-            ]
-          }
-        },
-        "tag":"proxy"
-      }
-    },
-    {
-      "remarks":"CA 🇨🇦 | @Raydikalx | 5E5EAD | 244d82",
-      "proxy":{
-        "protocol":"vless",
-        "settings":{
-          "address":"188.114.97.6",
-          "port":443,
-          "id":"c4394e27-baeb-422d-8905-a93f8e01126f",
-          "encryption":"none"
-        },
-        "streamSettings":{
-          "network":"xhttp",
-          "security":"tls",
-          "tlsSettings":{
-            "serverName":"cdn2.alihapp.com",
-            "alpn":[
-              "h2",
-              "http/1.1"
-            ],
-            "fingerprint":"unsafe",
-            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-          },
-          "finalmask":{
-            "tcp":[
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"tlshello",
-                  "lengths":[
-                    "0",
-                    "104",
-                    "1"
-                  ],
-                  "delays":[
-                    "0"
-                  ],
-                  "maxSplit":"0"
-                }
-              },
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"1-1",
-                  "lengths":[
-                    "114",
-                    "1"
-                  ],
-                  "delays":[
-                    "1"
-                  ],
-                  "maxSplit":"11"
-                }
-              }
-            ]
-          }
-        },
-        "tag":"proxy"
-      }
-    },
-    {
-      "remarks":"CA 🇨🇦 | @Raydikalx | FCF40F | 32a61b",
-      "proxy":{
-        "protocol":"vless",
-        "settings":{
-          "address":"188.114.97.6",
-          "port":443,
-          "id":"c4394e27-baeb-422d-8905-a93f8e01126f",
-          "encryption":"none"
-        },
-        "streamSettings":{
-          "network":"xhttp",
-          "security":"tls",
-          "tlsSettings":{
-            "serverName":"cdn9.alihapp.com",
-            "alpn":[
-              "h2",
-              "http/1.1"
-            ],
-            "fingerprint":"unsafe",
-            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-          },
-          "finalmask":{
-            "tcp":[
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"tlshello",
-                  "lengths":[
-                    "0",
-                    "104",
-                    "1"
-                  ],
-                  "delays":[
-                    "0"
-                  ],
-                  "maxSplit":"0"
-                }
-              },
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"1-1",
-                  "lengths":[
-                    "114",
-                    "1"
-                  ],
-                  "delays":[
-                    "1"
-                  ],
-                  "maxSplit":"11"
-                }
-              }
-            ]
-          }
-        },
-        "tag":"proxy"
-      }
-    },
-    {
-      "remarks":"@DeltaKroneckerGithub | 6a6c70",
-      "proxy":{
-        "protocol":"vless",
-        "settings":{
-          "address":"188.114.97.6",
-          "port":443,
-          "id":"41750e18-7143-49a3-bdac-4edcb3c8b8f3",
-          "encryption":"none"
-        },
-        "streamSettings":{
-          "network":"ws",
-          "security":"tls",
-          "tlsSettings":{
-            "serverName":"h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev",
-            "alpn":[
-              "http/1.1"
-            ],
-            "fingerprint":"unsafe",
-            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-          },
-          "wsSettings":{
-            "path":"/vl/ml3Epzqnzr8r2cTPtolbD5lTi1GWsZOP?ed=2560",
-            "host":"h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev"
-          },
-          "finalmask":{
-            "tcp":[
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"tlshello",
-                  "lengths":[
-                    "0",
-                    "104",
-                    "1"
-                  ],
-                  "delays":[
-                    "0"
-                  ],
-                  "maxSplit":"0"
-                }
-              },
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"1-1",
-                  "lengths":[
-                    "114",
-                    "1"
-                  ],
-                  "delays":[
-                    "1"
-                  ],
-                  "maxSplit":"11"
-                }
-              }
-            ]
-          }
-        },
-        "tag":"proxy"
-      }
-    },
-    {
-      "remarks":"@DeltaKroneckerGithub | ad468e",
-      "proxy":{
-        "protocol":"vless",
-        "settings":{
-          "address":"188.114.97.6",
-          "port":443,
-          "id":"34c8b234-4f70-4f1e-95c5-63eb07ba8c02",
-          "encryption":"none"
-        },
-        "streamSettings":{
-          "network":"ws",
-          "security":"tls",
-          "tlsSettings":{
-            "serverName":"ihlm260n2y4idabz3b4.29geu3ka61po3u1mtlec86u1ip336.workers.dev",
-            "alpn":[
-              "http/1.1"
-            ],
-            "fingerprint":"unsafe",
-            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-          },
-          "wsSettings":{
-            "path":"/vl/r6jtKY1DAlDSIWRfE7PrZ5k?ed=2560",
-            "host":"ihlm260n2y4idabz3b4.29geu3ka61po3u1mtlec86u1ip336.workers.dev"
-          },
-          "finalmask":{
-            "tcp":[
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"tlshello",
-                  "lengths":[
-                    "0",
-                    "104",
-                    "1"
-                  ],
-                  "delays":[
-                    "0"
-                  ],
-                  "maxSplit":"0"
-                }
-              },
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"1-1",
-                  "lengths":[
-                    "114",
-                    "1"
-                  ],
-                  "delays":[
-                    "1"
-                  ],
-                  "maxSplit":"11"
-                }
-              }
-            ]
-          }
-        },
-        "tag":"proxy"
-      }
-    },
-    {
-      "remarks":"@DeltaKroneckerGithub | f13e88",
-      "proxy":{
-        "protocol":"vless",
-        "settings":{
-          "address":"188.114.97.6",
-          "port":443,
-          "id":"8c67c0c5-9ed8-4c7d-8e13-b1008b32ec52",
-          "encryption":"none"
-        },
-        "streamSettings":{
-          "network":"ws",
-          "security":"tls",
-          "tlsSettings":{
-            "serverName":"einiorufwu6qe0p5fud9moci2i8.dbwyt3mzulwfqoqe2ehpst3vxlr.workers.dev",
-            "alpn":[
-              "http/1.1"
-            ],
-            "fingerprint":"unsafe",
-            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-          },
-          "wsSettings":{
-            "path":"/vl/o4uUi3sPnbWX6BR7AFbW4f?ed=2560",
-            "host":"einiorufwu6qe0p5fud9moci2i8.dbwyt3mzulwfqoqe2ehpst3vxlr.workers.dev"
-          },
-          "finalmask":{
-            "tcp":[
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"tlshello",
-                  "lengths":[
-                    "0",
-                    "104",
-                    "1"
-                  ],
-                  "delays":[
-                    "0"
-                  ],
-                  "maxSplit":"0"
-                }
-              },
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"1-1",
-                  "lengths":[
-                    "114",
-                    "1"
-                  ],
-                  "delays":[
-                    "1"
-                  ],
-                  "maxSplit":"11"
-                }
-              }
-            ]
-          }
-        },
-        "tag":"proxy"
-      }
-    },
-    {
-      "remarks":"@DeltaKroneckerGithub | e6bdc2",
-      "proxy":{
-        "protocol":"vless",
-        "settings":{
-          "address":"188.114.97.6",
-          "port":443,
-          "id":"4b21fbc7-00c2-4665-9788-02153832f9e5",
-          "encryption":"none"
-        },
-        "streamSettings":{
-          "network":"ws",
-          "security":"tls",
-          "tlsSettings":{
-            "serverName":"v2ray.aizgl.com",
-            "alpn":[
-              "http/1.1"
-            ],
-            "fingerprint":"unsafe",
-            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-          },
-          "wsSettings":{
-            "path":"/xray-ws",
-            "host":"v2ray.aizgl.com"
-          },
-          "finalmask":{
-            "tcp":[
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"tlshello",
-                  "lengths":[
-                    "0",
-                    "104",
-                    "1"
-                  ],
-                  "delays":[
-                    "0"
-                  ],
-                  "maxSplit":"0"
-                }
-              },
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"1-1",
-                  "lengths":[
-                    "114",
-                    "1"
-                  ],
-                  "delays":[
-                    "1"
-                  ],
-                  "maxSplit":"11"
-                }
-              }
-            ]
-          }
-        },
-        "tag":"proxy"
-      }
-    },
-    {
-      "remarks":"@DeltaKroneckerGithub | a9e3c7",
-      "proxy":{
-        "protocol":"vless",
-        "settings":{
-          "address":"188.114.97.6",
-          "port":443,
-          "id":"26168a04-a91c-48fc-b8d0-3ba5a4e719c4",
-          "encryption":"none"
-        },
-        "streamSettings":{
-          "network":"ws",
-          "security":"tls",
-          "tlsSettings":{
-            "serverName":"2yijonkovdic86iq5ebnd1moqqf.yyuz0mhr4awg8vw-wwycuu4.workers.dev",
-            "alpn":[
-              "http/1.1"
-            ],
-            "fingerprint":"unsafe",
-            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-          },
-          "wsSettings":{
-            "path":"/vl/17NBgz64AfwQ4Dd6qdNR?ed=2560",
-            "host":"2yijonkovdic86iq5ebnd1moqqf.yyuz0mhr4awg8vw-wwycuu4.workers.dev"
-          },
-          "finalmask":{
-            "tcp":[
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"tlshello",
-                  "lengths":[
-                    "0",
-                    "104",
-                    "1"
-                  ],
-                  "delays":[
-                    "0"
-                  ],
-                  "maxSplit":"0"
-                }
-              },
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"1-1",
-                  "lengths":[
-                    "114",
-                    "1"
-                  ],
-                  "delays":[
-                    "1"
-                  ],
-                  "maxSplit":"11"
-                }
-              }
-            ]
-          }
-        },
-        "tag":"proxy"
-      }
-    },
-    {
-      "remarks":"CA 🇨🇦 | @Raydikalx | 57B2C0 | acfbcf",
-      "proxy":{
-        "protocol":"vless",
-        "settings":{
-          "address":"188.114.97.6",
-          "port":443,
-          "id":"c4394e27-baeb-422d-8905-a93f8e01126f",
-          "encryption":"none"
-        },
-        "streamSettings":{
-          "network":"xhttp",
-          "security":"tls",
-          "tlsSettings":{
-            "serverName":"cdn10.alihapp.com",
-            "alpn":[
-              "h2",
-              "http/1.1"
-            ],
-            "fingerprint":"unsafe",
-            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-          },
-          "finalmask":{
-            "tcp":[
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"tlshello",
-                  "lengths":[
-                    "0",
-                    "104",
-                    "1"
-                  ],
-                  "delays":[
-                    "0"
-                  ],
-                  "maxSplit":"0"
-                }
-              },
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"1-1",
-                  "lengths":[
-                    "114",
-                    "1"
-                  ],
-                  "delays":[
-                    "1"
-                  ],
-                  "maxSplit":"11"
-                }
-              }
-            ]
-          }
-        },
-        "tag":"proxy"
-      }
-    },
-    {
-      "remarks":"GB 🇬🇧 | @Raydikalx | B4B0A6 | 567cc5",
-      "proxy":{
-        "protocol":"vless",
-        "settings":{
-          "address":"188.114.97.6",
-          "port":443,
-          "id":"720043a3-d5fb-4a94-883c-13e4b628253c",
-          "encryption":"none"
-        },
-        "streamSettings":{
-          "network":"ws",
-          "security":"tls",
-          "tlsSettings":{
-            "serverName":"lon-rem-2.vip107.cfd",
-            "alpn":[
-              "http/1.1"
-            ],
-            "fingerprint":"unsafe",
-            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-          },
-          "wsSettings":{
-            "path":"/",
-            "host":"lon-rem-2.vip107.cfd"
-          },
-          "finalmask":{
-            "tcp":[
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"tlshello",
-                  "lengths":[
-                    "0",
-                    "104",
-                    "1"
-                  ],
-                  "delays":[
-                    "0"
-                  ],
-                  "maxSplit":"0"
-                }
-              },
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"1-1",
-                  "lengths":[
-                    "114",
-                    "1"
-                  ],
-                  "delays":[
-                    "1"
-                  ],
-                  "maxSplit":"11"
-                }
-              }
-            ]
-          }
-        },
-        "tag":"proxy"
-      }
-    },
-    {
-      "remarks":"CA 🇨🇦 | @Raydikalx | C4DA78 | eafb41",
-      "proxy":{
-        "protocol":"vless",
-        "settings":{
-          "address":"188.114.97.6",
-          "port":443,
-          "id":"a9a3278d-cdd1-40ac-83bc-adb53ff9be3d",
-          "encryption":"none"
-        },
-        "streamSettings":{
-          "network":"xhttp",
-          "security":"tls",
-          "tlsSettings":{
-            "serverName":"out-cloudflare.royal-me.site",
-            "alpn":[
-              "h2",
-              "http/1.1"
-            ],
-            "fingerprint":"unsafe",
-            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-          },
-          "finalmask":{
-            "tcp":[
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"tlshello",
-                  "lengths":[
-                    "0",
-                    "104",
-                    "1"
-                  ],
-                  "delays":[
-                    "0"
-                  ],
-                  "maxSplit":"0"
-                }
-              },
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"1-1",
-                  "lengths":[
-                    "114",
-                    "1"
-                  ],
-                  "delays":[
-                    "1"
-                  ],
-                  "maxSplit":"11"
-                }
-              }
-            ]
-          }
-        },
-        "tag":"proxy"
-      }
-    },
-    {
-      "remarks":"CA 🇨🇦 | @Raydikalx | F1CCBA | c57b16",
-      "proxy":{
-        "protocol":"vless",
-        "settings":{
-          "address":"188.114.97.6",
-          "port":443,
-          "id":"c4394e27-baeb-422d-8905-a93f8e01126f",
-          "encryption":"none"
-        },
-        "streamSettings":{
-          "network":"xhttp",
-          "security":"tls",
-          "tlsSettings":{
-            "serverName":"cdn8.alihapp.com",
-            "alpn":[
-              "h2",
-              "http/1.1"
-            ],
-            "fingerprint":"unsafe",
-            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-          },
-          "finalmask":{
-            "tcp":[
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"tlshello",
-                  "lengths":[
-                    "0",
-                    "104",
-                    "1"
-                  ],
-                  "delays":[
-                    "0"
-                  ],
-                  "maxSplit":"0"
-                }
-              },
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"1-1",
-                  "lengths":[
-                    "114",
-                    "1"
-                  ],
-                  "delays":[
-                    "1"
-                  ],
-                  "maxSplit":"11"
-                }
-              }
-            ]
-          }
-        },
-        "tag":"proxy"
-      }
-    },
-    {
-      "remarks":"@DeltaKroneckerGithub | 2c89c4",
+      "remarks":"By EbraSha 🪖 | 539208",
       "proxy":{
         "protocol":"trojan",
         "settings":{
@@ -1239,7 +391,7 @@
           "network":"ws",
           "security":"tls",
           "tlsSettings":{
-            "serverName":"www.pleadcourt.org",
+            "serverName":"www.calmlunch.com",
             "alpn":[
               "http/1.1"
             ],
@@ -1248,7 +400,7 @@
           },
           "wsSettings":{
             "path":"/assignment",
-            "host":"www.pleadcourt.org"
+            "host":"www.calmlunch.com"
           },
           "finalmask":{
             "tcp":[
@@ -1288,264 +440,19 @@
       }
     },
     {
-      "remarks":"CA 🇨🇦 | @Raydikalx | BB9D4E | ad761f",
-      "proxy":{
-        "protocol":"vless",
-        "settings":{
-          "address":"188.114.97.6",
-          "port":443,
-          "id":"c4394e27-baeb-422d-8905-a93f8e01126f",
-          "encryption":"none"
-        },
-        "streamSettings":{
-          "network":"xhttp",
-          "security":"tls",
-          "tlsSettings":{
-            "serverName":"cdn.alihapp.com",
-            "alpn":[
-              "h2",
-              "http/1.1"
-            ],
-            "fingerprint":"unsafe",
-            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-          },
-          "finalmask":{
-            "tcp":[
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"tlshello",
-                  "lengths":[
-                    "0",
-                    "104",
-                    "1"
-                  ],
-                  "delays":[
-                    "0"
-                  ],
-                  "maxSplit":"0"
-                }
-              },
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"1-1",
-                  "lengths":[
-                    "114",
-                    "1"
-                  ],
-                  "delays":[
-                    "1"
-                  ],
-                  "maxSplit":"11"
-                }
-              }
-            ]
-          }
-        },
-        "tag":"proxy"
-      }
-    },
-    {
-      "remarks":"@DeltaKroneckerGithub | 3f77aa",
-      "proxy":{
-        "protocol":"vless",
-        "settings":{
-          "address":"188.114.97.6",
-          "port":443,
-          "id":"03790b11-e3d9-4966-859b-4e524bb04645",
-          "encryption":"none"
-        },
-        "streamSettings":{
-          "network":"ws",
-          "security":"tls",
-          "tlsSettings":{
-            "serverName":"vfuhf4iqn9b0-pyqr62d.qfem579emmb5z6ne0ejfcb.workers.dev",
-            "alpn":[
-              "http/1.1"
-            ],
-            "fingerprint":"unsafe",
-            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-          },
-          "wsSettings":{
-            "path":"/vl/JjVa6m2jVRuNUtMfj?ed=2560",
-            "host":"vfuhf4iqn9b0-pyqr62d.qfem579emmb5z6ne0ejfcb.workers.dev"
-          },
-          "finalmask":{
-            "tcp":[
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"tlshello",
-                  "lengths":[
-                    "0",
-                    "104",
-                    "1"
-                  ],
-                  "delays":[
-                    "0"
-                  ],
-                  "maxSplit":"0"
-                }
-              },
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"1-1",
-                  "lengths":[
-                    "114",
-                    "1"
-                  ],
-                  "delays":[
-                    "1"
-                  ],
-                  "maxSplit":"11"
-                }
-              }
-            ]
-          }
-        },
-        "tag":"proxy"
-      }
-    },
-    {
-      "remarks":"🇨🇦185886 | ⚡️Telegram = t.me/SOSkeyNET | b4d11e",
-      "proxy":{
-        "protocol":"vless",
-        "settings":{
-          "address":"188.114.97.6",
-          "port":443,
-          "id":"4b21fbc7-00c2-4665-9788-02153832f9e5",
-          "encryption":"none"
-        },
-        "streamSettings":{
-          "network":"ws",
-          "security":"tls",
-          "tlsSettings":{
-            "serverName":"v2ray.aizgl.com",
-            "alpn":[
-              "http/1.1"
-            ],
-            "fingerprint":"unsafe",
-            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-          },
-          "wsSettings":{
-            "path":"/xray-ws",
-            "host":"v2ray.aizgl.com"
-          },
-          "finalmask":{
-            "tcp":[
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"tlshello",
-                  "lengths":[
-                    "0",
-                    "104",
-                    "1"
-                  ],
-                  "delays":[
-                    "0"
-                  ],
-                  "maxSplit":"0"
-                }
-              },
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"1-1",
-                  "lengths":[
-                    "114",
-                    "1"
-                  ],
-                  "delays":[
-                    "1"
-                  ],
-                  "maxSplit":"11"
-                }
-              }
-            ]
-          }
-        },
-        "tag":"proxy"
-      }
-    },
-    {
-      "remarks":"🚀@VPNine1 | ac768d",
-      "proxy":{
-        "protocol":"vless",
-        "settings":{
-          "address":"188.114.97.6",
-          "port":443,
-          "id":"06278d74-9385-42e8-be1b-49c78ebc49ea",
-          "encryption":"none"
-        },
-        "streamSettings":{
-          "network":"ws",
-          "security":"tls",
-          "tlsSettings":{
-            "serverName":"snapp.matialz.ir",
-            "alpn":[
-              "http/1.1"
-            ],
-            "fingerprint":"unsafe",
-            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-          },
-          "wsSettings":{
-            "path":"/pgcfws-d7k",
-            "host":"snapp.matialz.ir"
-          },
-          "finalmask":{
-            "tcp":[
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"tlshello",
-                  "lengths":[
-                    "0",
-                    "104",
-                    "1"
-                  ],
-                  "delays":[
-                    "0"
-                  ],
-                  "maxSplit":"0"
-                }
-              },
-              {
-                "type":"fragment",
-                "settings":{
-                  "packets":"1-1",
-                  "lengths":[
-                    "114",
-                    "1"
-                  ],
-                  "delays":[
-                    "1"
-                  ],
-                  "maxSplit":"11"
-                }
-              }
-            ]
-          }
-        },
-        "tag":"proxy"
-      }
-    },
-    {
-      "remarks":"By EbraSha 🧿 | 8e4847",
+      "remarks":">>@freeland8::FR | 08ea3f",
       "proxy":{
         "protocol":"trojan",
         "settings":{
           "address":"188.114.97.6",
           "port":443,
-          "password":"e309e031-991e-4656-9934-44d10deb8fd8"
+          "password":"humanity"
         },
         "streamSettings":{
           "network":"ws",
           "security":"tls",
           "tlsSettings":{
-            "serverName":"nimm.mpd.cc.cd",
+            "serverName":"www.calmlunch.com",
             "alpn":[
               "http/1.1"
             ],
@@ -1553,7 +460,8 @@
             "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
           },
           "wsSettings":{
-            "path":"/0962"
+            "path":"//assignment",
+            "host":"www.calmlunch.com"
           },
           "finalmask":{
             "tcp":[
@@ -1593,20 +501,20 @@
       }
     },
     {
-      "remarks":"@DeltaKroneckerGithub | adce76",
+      "remarks":"CA 🇨🇦 | @Raydikalx | 4076D7 | 82d302",
       "proxy":{
         "protocol":"vless",
         "settings":{
           "address":"188.114.97.6",
           "port":443,
-          "id":"22fa3629-21b7-4904-b800-db850decb620",
+          "id":"b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
           "encryption":"none"
         },
         "streamSettings":{
           "network":"ws",
           "security":"tls",
           "tlsSettings":{
-            "serverName":"fin.vip98.cfd",
+            "serverName":"u.srilankangrill.online",
             "alpn":[
               "http/1.1"
             ],
@@ -1615,7 +523,7 @@
           },
           "wsSettings":{
             "path":"/",
-            "host":"fin.vip98.cfd"
+            "host":"u.srilankangrill.online"
           },
           "finalmask":{
             "tcp":[
@@ -1655,20 +563,20 @@
       }
     },
     {
-      "remarks":"By EbraSha 🦈 | 2176fb",
+      "remarks":"CA 🇨🇦 | @Raydikalx | BE20E9 | abe8d3",
       "proxy":{
         "protocol":"vless",
         "settings":{
           "address":"188.114.97.6",
           "port":443,
-          "id":"76ac91c5-ea82-4046-8ee7-2ffbb563ac94",
+          "id":"b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
           "encryption":"none"
         },
         "streamSettings":{
           "network":"ws",
           "security":"tls",
           "tlsSettings":{
-            "serverName":"geo.shkola112.site",
+            "serverName":"u.srilankangrill.online",
             "alpn":[
               "http/1.1"
             ],
@@ -1676,8 +584,318 @@
             "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
           },
           "wsSettings":{
-            "path":"/api-vless",
-            "host":"geo.shkola112.site"
+            "path":"/",
+            "host":"u.srilankangrill.online"
+          },
+          "finalmask":{
+            "tcp":[
+              {
+                "type":"fragment",
+                "settings":{
+                  "packets":"tlshello",
+                  "lengths":[
+                    "0",
+                    "104",
+                    "1"
+                  ],
+                  "delays":[
+                    "0"
+                  ],
+                  "maxSplit":"0"
+                }
+              },
+              {
+                "type":"fragment",
+                "settings":{
+                  "packets":"1-1",
+                  "lengths":[
+                    "114",
+                    "1"
+                  ],
+                  "delays":[
+                    "1"
+                  ],
+                  "maxSplit":"11"
+                }
+              }
+            ]
+          }
+        },
+        "tag":"proxy"
+      }
+    },
+    {
+      "remarks":"CA 🇨🇦 | @Raydikalx | 43A83A | 0f05ae",
+      "proxy":{
+        "protocol":"vless",
+        "settings":{
+          "address":"188.114.97.6",
+          "port":443,
+          "id":"b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
+          "encryption":"none"
+        },
+        "streamSettings":{
+          "network":"ws",
+          "security":"tls",
+          "tlsSettings":{
+            "serverName":"u.srilankangrill.online",
+            "alpn":[
+              "http/1.1"
+            ],
+            "fingerprint":"unsafe",
+            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
+          },
+          "wsSettings":{
+            "path":"/",
+            "host":"u.srilankangrill.online"
+          },
+          "finalmask":{
+            "tcp":[
+              {
+                "type":"fragment",
+                "settings":{
+                  "packets":"tlshello",
+                  "lengths":[
+                    "0",
+                    "104",
+                    "1"
+                  ],
+                  "delays":[
+                    "0"
+                  ],
+                  "maxSplit":"0"
+                }
+              },
+              {
+                "type":"fragment",
+                "settings":{
+                  "packets":"1-1",
+                  "lengths":[
+                    "114",
+                    "1"
+                  ],
+                  "delays":[
+                    "1"
+                  ],
+                  "maxSplit":"11"
+                }
+              }
+            ]
+          }
+        },
+        "tag":"proxy"
+      }
+    },
+    {
+      "remarks":"By EbraSha 🧨 | ad434e",
+      "proxy":{
+        "protocol":"vless",
+        "settings":{
+          "address":"188.114.97.6",
+          "port":443,
+          "id":"b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
+          "encryption":"none"
+        },
+        "streamSettings":{
+          "network":"ws",
+          "security":"tls",
+          "tlsSettings":{
+            "serverName":"u.srilankangrill.online",
+            "alpn":[
+              "http/1.1"
+            ],
+            "fingerprint":"unsafe",
+            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
+          },
+          "wsSettings":{
+            "path":"/",
+            "host":"u.srilankangrill.online"
+          },
+          "finalmask":{
+            "tcp":[
+              {
+                "type":"fragment",
+                "settings":{
+                  "packets":"tlshello",
+                  "lengths":[
+                    "0",
+                    "104",
+                    "1"
+                  ],
+                  "delays":[
+                    "0"
+                  ],
+                  "maxSplit":"0"
+                }
+              },
+              {
+                "type":"fragment",
+                "settings":{
+                  "packets":"1-1",
+                  "lengths":[
+                    "114",
+                    "1"
+                  ],
+                  "delays":[
+                    "1"
+                  ],
+                  "maxSplit":"11"
+                }
+              }
+            ]
+          }
+        },
+        "tag":"proxy"
+      }
+    },
+    {
+      "remarks":"@DeltaKroneckerGithub | b8c9ae",
+      "proxy":{
+        "protocol":"vless",
+        "settings":{
+          "address":"188.114.97.6",
+          "port":443,
+          "id":"b585dc5e-55bf-4a8b-913a-27c9ccac05c3",
+          "encryption":"none"
+        },
+        "streamSettings":{
+          "network":"ws",
+          "security":"tls",
+          "tlsSettings":{
+            "serverName":"bab-6.site",
+            "alpn":[
+              "http/1.1"
+            ],
+            "fingerprint":"unsafe",
+            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
+          },
+          "wsSettings":{
+            "path":"/vws/",
+            "host":"bab-6.site"
+          },
+          "finalmask":{
+            "tcp":[
+              {
+                "type":"fragment",
+                "settings":{
+                  "packets":"tlshello",
+                  "lengths":[
+                    "0",
+                    "104",
+                    "1"
+                  ],
+                  "delays":[
+                    "0"
+                  ],
+                  "maxSplit":"0"
+                }
+              },
+              {
+                "type":"fragment",
+                "settings":{
+                  "packets":"1-1",
+                  "lengths":[
+                    "114",
+                    "1"
+                  ],
+                  "delays":[
+                    "1"
+                  ],
+                  "maxSplit":"11"
+                }
+              }
+            ]
+          }
+        },
+        "tag":"proxy"
+      }
+    },
+    {
+      "remarks":"By EbraSha 🚀 | 3c80c8",
+      "proxy":{
+        "protocol":"vless",
+        "settings":{
+          "address":"188.114.97.6",
+          "port":443,
+          "id":"b585dc5e-55bf-4a8b-913a-27c9ccac05c3",
+          "encryption":"none"
+        },
+        "streamSettings":{
+          "network":"ws",
+          "security":"tls",
+          "tlsSettings":{
+            "serverName":"bab-6.site",
+            "alpn":[
+              "http/1.1"
+            ],
+            "fingerprint":"unsafe",
+            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
+          },
+          "wsSettings":{
+            "path":"/vws/",
+            "host":"bab-6.site"
+          },
+          "finalmask":{
+            "tcp":[
+              {
+                "type":"fragment",
+                "settings":{
+                  "packets":"tlshello",
+                  "lengths":[
+                    "0",
+                    "104",
+                    "1"
+                  ],
+                  "delays":[
+                    "0"
+                  ],
+                  "maxSplit":"0"
+                }
+              },
+              {
+                "type":"fragment",
+                "settings":{
+                  "packets":"1-1",
+                  "lengths":[
+                    "114",
+                    "1"
+                  ],
+                  "delays":[
+                    "1"
+                  ],
+                  "maxSplit":"11"
+                }
+              }
+            ]
+          }
+        },
+        "tag":"proxy"
+      }
+    },
+    {
+      "remarks":"@DeltaKroneckerGithub | bf3a8a",
+      "proxy":{
+        "protocol":"vless",
+        "settings":{
+          "address":"188.114.97.6",
+          "port":443,
+          "id":"4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+          "encryption":"none"
+        },
+        "streamSettings":{
+          "network":"ws",
+          "security":"tls",
+          "tlsSettings":{
+            "serverName":"jp3.yohototo.top",
+            "alpn":[
+              "http/1.1"
+            ],
+            "fingerprint":"unsafe",
+            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
+          },
+          "wsSettings":{
+            "path":"/tyxyws",
+            "host":"jp3.yohototo.top"
           },
           "finalmask":{
             "tcp":[
@@ -1779,19 +997,20 @@
       }
     },
     {
-      "remarks":"CA 🇨🇦 | @Raydikalx | BC3485 | c1fd74",
+      "remarks":"@DeltaKroneckerGithub | 3c5700",
       "proxy":{
-        "protocol":"trojan",
+        "protocol":"vless",
         "settings":{
           "address":"188.114.97.6",
           "port":443,
-          "password":"humanity"
+          "id":"4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+          "encryption":"none"
         },
         "streamSettings":{
           "network":"ws",
           "security":"tls",
           "tlsSettings":{
-            "serverName":"www.volumeroot.com",
+            "serverName":"jp3.yohototo.top",
             "alpn":[
               "http/1.1"
             ],
@@ -1799,8 +1018,193 @@
             "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
           },
           "wsSettings":{
-            "path":"/assignment",
-            "host":"www.volumeroot.com"
+            "path":"/tyxyws",
+            "host":"jp3.yohototo.top"
+          },
+          "finalmask":{
+            "tcp":[
+              {
+                "type":"fragment",
+                "settings":{
+                  "packets":"tlshello",
+                  "lengths":[
+                    "0",
+                    "104",
+                    "1"
+                  ],
+                  "delays":[
+                    "0"
+                  ],
+                  "maxSplit":"0"
+                }
+              },
+              {
+                "type":"fragment",
+                "settings":{
+                  "packets":"1-1",
+                  "lengths":[
+                    "114",
+                    "1"
+                  ],
+                  "delays":[
+                    "1"
+                  ],
+                  "maxSplit":"11"
+                }
+              }
+            ]
+          }
+        },
+        "tag":"proxy"
+      }
+    },
+    {
+      "remarks":"IT 🇮🇹 | @Raydikalx | 949F8F | 36e982",
+      "proxy":{
+        "protocol":"vless",
+        "settings":{
+          "address":"188.114.97.6",
+          "port":443,
+          "id":"b585dc5e-55bf-4a8b-913a-27c9ccac05c3",
+          "encryption":"none"
+        },
+        "streamSettings":{
+          "network":"ws",
+          "security":"tls",
+          "tlsSettings":{
+            "serverName":"bab-6.site",
+            "alpn":[
+              "http/1.1"
+            ],
+            "fingerprint":"unsafe",
+            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
+          },
+          "wsSettings":{
+            "path":"/vws/",
+            "host":"bab-6.site"
+          },
+          "finalmask":{
+            "tcp":[
+              {
+                "type":"fragment",
+                "settings":{
+                  "packets":"tlshello",
+                  "lengths":[
+                    "0",
+                    "104",
+                    "1"
+                  ],
+                  "delays":[
+                    "0"
+                  ],
+                  "maxSplit":"0"
+                }
+              },
+              {
+                "type":"fragment",
+                "settings":{
+                  "packets":"1-1",
+                  "lengths":[
+                    "114",
+                    "1"
+                  ],
+                  "delays":[
+                    "1"
+                  ],
+                  "maxSplit":"11"
+                }
+              }
+            ]
+          }
+        },
+        "tag":"proxy"
+      }
+    },
+    {
+      "remarks":"[ 🇨🇦 ] | @Cfox_SerVer | 333631",
+      "proxy":{
+        "protocol":"trojan",
+        "settings":{
+          "address":"188.114.97.6",
+          "port":443,
+          "password":"018b8e7b-7813-4dcb-84a5-3c98f1521e00"
+        },
+        "streamSettings":{
+          "network":"ws",
+          "security":"tls",
+          "tlsSettings":{
+            "serverName":"id1.nathaya.web.id",
+            "alpn":[
+              "http/1.1"
+            ],
+            "fingerprint":"unsafe",
+            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
+          },
+          "wsSettings":{
+            "path":"/trojan",
+            "host":"id1.nathaya.web.id"
+          },
+          "finalmask":{
+            "tcp":[
+              {
+                "type":"fragment",
+                "settings":{
+                  "packets":"tlshello",
+                  "lengths":[
+                    "0",
+                    "104",
+                    "1"
+                  ],
+                  "delays":[
+                    "0"
+                  ],
+                  "maxSplit":"0"
+                }
+              },
+              {
+                "type":"fragment",
+                "settings":{
+                  "packets":"1-1",
+                  "lengths":[
+                    "114",
+                    "1"
+                  ],
+                  "delays":[
+                    "1"
+                  ],
+                  "maxSplit":"11"
+                }
+              }
+            ]
+          }
+        },
+        "tag":"proxy"
+      }
+    },
+    {
+      "remarks":"@DeltaKroneckerGithub | ed981e",
+      "proxy":{
+        "protocol":"vless",
+        "settings":{
+          "address":"188.114.97.6",
+          "port":443,
+          "id":"c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
+          "encryption":"none"
+        },
+        "streamSettings":{
+          "network":"ws",
+          "security":"tls",
+          "tlsSettings":{
+            "serverName":"a.cwvps.eu.org",
+            "alpn":[
+              "http/1.1"
+            ],
+            "fingerprint":"unsafe",
+            "cipherSuites":"TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
+          },
+          "wsSettings":{
+            "path":"/ws#/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512",
+            "host":"a.cwvps.eu.org"
           },
           "finalmask":{
             "tcp":[
