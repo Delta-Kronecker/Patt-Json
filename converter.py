@@ -5,105 +5,64 @@ from urllib.parse import parse_qs, unquote, urlparse
 URL = "https://github.com/patterniha/Free-Configs/raw/refs/heads/main/configs.txt"
 OUT = "converted.json"
 
-TEMPLATE = {
-    "log": {"loglevel": "warning"},
-    "dns": {
-        "hosts": {
-            "geosite:category-ads-all": "127.0.0.1",
-            "domain:googleapis.cn": "googleapis.com",
-            "dns.alidns.com": ["223.5.5.5", "223.6.6.6", "2400:3200::1", "2400:3200:baba::1"],
-            "dns.sse.cisco.com": ["208.67.220.220", "208.67.222.222", "2620:119:35::35", "2620:119:53::53"],
-            "dns.umbrella.com": ["208.67.220.220", "208.67.222.222", "2620:119:35::35", "2620:119:53::53"],
-            "one.one.one.one": ["1.1.1.1", "1.0.0.1", "2606:4700:4700::1111", "2606:4700:4700::1001"],
-            "1dot1dot1dot1.cloudflare-dns.com": ["1.1.1.1", "1.0.0.1", "2606:4700:4700::1111", "2606:4700:4700::1001"],
-            "dns.cloudflare.com": ["162.159.61.8", "172.64.41.8", "2a06:98c1:52::8", "2803:f800:53::8"],
-            "cloudflare-dns.com": ["104.16.248.249", "104.16.249.249", "2606:4700::6810:f8f9", "2606:4700::6810:f9f9"],
-            "engage.cloudflareclient.com": ["162.159.192.1", "2606:4700:d0::a29f:c001"],
-            "doh.pub": ["1.12.12.12", "120.53.53.53"],
-            "dot.pub": ["1.12.12.12", "120.53.53.53"],
-            "dns.google": ["8.8.8.8", "8.8.4.4", "2001:4860:4860::8888", "2001:4860:4860::8844"],
-            "dns.quad9.net": ["9.9.9.9", "149.112.112.112", "2620:fe::fe", "2620:fe::9"],
-            "dns.sb": ["45.11.45.11", "185.222.222.222", "2a09::", "2a11::"],
-            "common.dot.dns.yandex.net": ["77.88.8.8", "77.88.8.1", "2a02:6b8::feed:0ff", "2a02:6b8:0:1::feed:0ff"]
-        },
-        "servers": [
-            {"address": "fakedns", "domains": ["geosite:cn", "geosite:private", "domain:ir", "geosite:category-ir"]},
-            "https://dns.google/dns-query",
-            {"address": "localhost", "domains": ["geosite:private"], "finalQuery": True, "skipFallback": True, "tag": "domestic-dns_1_0"},
-            {"address": "localhost", "domains": ["domain:ir", "geosite:category-ir"], "finalQuery": True, "skipFallback": True, "tag": "domestic-dns_2_0"}
-        ],
-        "tag": "dns-module"
-    },
-    "inbounds": [{
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {"auth": "noauth", "udp": True},
-        "sniffing": {
-            "enabled": True,
-            "destOverride": ["http", "tls", "quic", "fakedns"],
-            "routeOnly": False
-        }
-    }],
-    "policy": {
-        "levels": {
-            "0": {"downlinkOnly": 0, "uplinkOnly": 0},
-            "12": {"connIdle": 12, "downlinkOnly": 0, "uplinkOnly": 0}
-        },
-        "system": {"statsOutboundUplink": True, "statsOutboundDownlink": True}
-    },
-    "routing": {
-        "domainStrategy": "AsIs",
-        "rules": [
-            {"inboundTag": ["socks"], "port": "53", "outboundTag": "dns-out"},
-            {"inboundTag": ["domestic-dns_1_0", "domestic-dns_2_0"], "outboundTag": "direct"},
-            {"inboundTag": ["dns-module"], "outboundTag": "proxy"},
-            {"protocol": ["bittorrent"], "outboundTag": "direct"},
-            {"network": "udp", "port": "443", "outboundTag": "block"},
-            {"domain": ["geosite:category-ads-all"], "outboundTag": "block"},
-            {"ip": ["geoip:private"], "outboundTag": "direct"},
-            {"domain": ["geosite:private"], "outboundTag": "direct"},
-            {"domain": ["domain:ir", "geosite:category-ir"], "outboundTag": "direct"},
-            {"ip": ["geoip:ir"], "outboundTag": "direct"}
-        ]
-    },
-    "stats": {}
-}
 
-TAIL_OUTBOUNDS = [
-    {"tag": "direct", "protocol": "freedom"},
-    {"tag": "block", "protocol": "blackhole"},
-    {"tag": "dns-out", "protocol": "dns", "settings": {"userLevel": 12}}
-]
-
-
-def build_stream(q):
+def build_stream(q, host_default=""):
     network = q.get("type", ["tcp"])[0]
     security = q.get("security", ["none"])[0]
+    host = q.get("host", [host_default])[0] or host_default
+    path = unquote(q.get("path", ["/"])[0])
 
-    stream = {
-        "network": network,
-        "security": security
-    }
+    stream = {"network": network}
+
+    if network == "ws":
+        stream["wsSettings"] = {
+            "host": host,
+            "path": path
+        }
+    elif network == "grpc":
+        grpc = {"serviceName": q.get("serviceName", [""])[0]}
+        if q.get("authority"):
+            grpc["authority"] = q["authority"][0]
+        stream["grpcSettings"] = grpc
+    elif network == "tcp":
+        header_type = q.get("headerType", ["none"])[0]
+        if header_type and header_type != "none":
+            stream["tcpSettings"] = {
+                "header": {
+                    "type": header_type,
+                    "request": {
+                        "path": [path],
+                        "headers": {"Host": host}
+                    }
+                }
+            }
+    elif network == "httpupgrade":
+        stream["httpupgradeSettings"] = {"path": path, "host": host}
+    elif network == "xhttp":
+        xhttp = {"path": path}
+        if host:
+            xhttp["host"] = host
+        if q.get("mode"):
+            xhttp["mode"] = q["mode"][0]
+        stream["xhttpSettings"] = xhttp
 
     if security == "tls":
         tls = {}
         sni = q.get("sni", [""])[0]
         if sni:
             tls["serverName"] = sni
-        alpn = q.get("alpn", [""])[0]
-        if alpn:
-            tls["alpn"] = [a for a in alpn.split(",") if a]
         fp = q.get("fp", [""])[0]
         if fp:
             tls["fingerprint"] = fp
+        alpn = q.get("alpn", [""])[0]
+        if alpn:
+            tls["alpn"] = [a for a in alpn.split(",") if a]
         if q.get("cs"):
             tls["cipherSuites"] = q["cs"][0]
         if q.get("allowInsecure", ["0"])[0] == "1":
             tls["allowInsecure"] = True
+        stream["security"] = "tls"
         stream["tlsSettings"] = tls
-
     elif security == "reality":
         reality = {}
         sni = q.get("sni", [""])[0]
@@ -118,46 +77,10 @@ def build_stream(q):
             reality["shortId"] = q["sid"][0]
         if q.get("spx"):
             reality["spiderX"] = unquote(q["spx"][0])
+        stream["security"] = "reality"
         stream["realitySettings"] = reality
-
-    if network == "ws":
-        ws = {"path": unquote(q.get("path", ["/"])[0])}
-        host = q.get("host", [""])[0]
-        if host:
-            ws["headers"] = {"Host": host}
-        stream["wsSettings"] = ws
-
-    elif network == "grpc":
-        stream["grpcSettings"] = {"serviceName": q.get("serviceName", [""])[0]}
-        if q.get("authority"):
-            stream["grpcSettings"]["authority"] = q["authority"][0]
-
-    elif network == "tcp":
-        header_type = q.get("headerType", ["none"])[0]
-        if header_type and header_type != "none":
-            stream["tcpSettings"] = {
-                "header": {
-                    "type": header_type,
-                    "request": {
-                        "path": [unquote(q.get("path", ["/"])[0])],
-                        "headers": {"Host": q.get("host", [""])[0]}
-                    }
-                }
-            }
-
-    elif network == "xhttp":
-        xhttp = {"path": unquote(q.get("path", ["/"])[0])}
-        if q.get("host"):
-            xhttp["host"] = q["host"][0]
-        if q.get("mode"):
-            xhttp["mode"] = q["mode"][0]
-        stream["xhttpSettings"] = xhttp
-
-    elif network == "httpupgrade":
-        hu = {"path": unquote(q.get("path", ["/"])[0])}
-        if q.get("host"):
-            hu["host"] = q["host"][0]
-        stream["httpupgradeSettings"] = hu
+    else:
+        stream["security"] = "none"
 
     if q.get("fm"):
         raw = unquote(q["fm"][0])
@@ -166,13 +89,121 @@ def build_stream(q):
         except Exception:
             stream["finalmask"] = raw
 
-    sockopt = {}
-    if q.get("tcpNoDelay", ["0"])[0] == "1":
-        sockopt["tcpNoDelay"] = True
-    if sockopt:
-        stream["sockopt"] = sockopt
-
     return stream
+
+
+def make_config(proxy, remark, is_best=False, all_proxies=None):
+    cfg = {
+        "remarks": remark,
+        "version": {"min": "26.2.6"},
+        "log": {"loglevel": "none"},
+        "dns": {
+            "servers": [
+                "fakedns",
+                {"address": "https://8.8.8.8/dns-query", "tag": "remote-dns"}
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "listen": "127.0.0.1",
+                "port": 10808,
+                "protocol": "mixed",
+                "settings": {"auth": "noauth", "udp": True},
+                "sniffing": {
+                    "destOverride": ["http", "tls", "fakedns"],
+                    "enabled": True,
+                    "routeOnly": True
+                },
+                "tag": "mixed-in"
+            },
+            {
+                "listen": "127.0.0.1",
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": []
+        },
+        "policy": {
+            "levels": {
+                "0": {
+                    "connIdle": 300,
+                    "handshake": 4,
+                    "uplinkOnly": 1,
+                    "downlinkOnly": 1
+                }
+            },
+            "system": {
+                "statsOutboundUplink": True,
+                "statsOutboundDownlink": True
+            }
+        },
+        "stats": {}
+    }
+
+    if not is_best:
+        cfg["outbounds"] = [
+            proxy,
+            {"protocol": "dns", "settings": {"rules": [{"action": "hijack"}]}, "tag": "dns-out"},
+            {"protocol": "freedom", "settings": {"domainStrategy": "UseIP"}, "tag": "direct"},
+            {"protocol": "blackhole", "settings": {"response": {"type": "http"}}, "tag": "block"}
+        ]
+        cfg["routing"]["rules"] = [
+            {"inboundTag": ["mixed-in"], "port": 53, "outboundTag": "dns-out", "type": "field"},
+            {"inboundTag": ["dns-in"], "outboundTag": "dns-out", "type": "field"},
+            {"inboundTag": ["remote-dns"], "outboundTag": "proxy", "type": "field"},
+            {"inboundTag": ["dns"], "outboundTag": "direct", "type": "field"},
+            {"domain": ["geosite:private"], "outboundTag": "direct", "type": "field"},
+            {"ip": ["geoip:private"], "outboundTag": "direct", "type": "field"},
+            {"network": "udp", "outboundTag": "block", "type": "field"},
+            {"network": "tcp", "outboundTag": "proxy", "type": "field"}
+        ]
+    else:
+        outs = []
+        for i, p in enumerate(all_proxies, 1):
+            p2 = json.loads(json.dumps(p))
+            p2["tag"] = f"proxy-{i}"
+            outs.append(p2)
+        outs.append({"protocol": "dns", "settings": {"rules": [{"action": "hijack"}]}, "tag": "dns-out"})
+        outs.append({"protocol": "freedom", "settings": {"domainStrategy": "UseIP"}, "tag": "direct"})
+        outs.append({"protocol": "blackhole", "settings": {"response": {"type": "http"}}, "tag": "block"})
+        cfg["outbounds"] = outs
+
+        cfg["routing"]["rules"] = [
+            {"inboundTag": ["mixed-in"], "port": 53, "outboundTag": "dns-out", "type": "field"},
+            {"inboundTag": ["dns-in"], "outboundTag": "dns-out", "type": "field"},
+            {"inboundTag": ["remote-dns"], "balancerTag": "all-proxies", "type": "field"},
+            {"inboundTag": ["dns"], "outboundTag": "direct", "type": "field"},
+            {"domain": ["geosite:private"], "outboundTag": "direct", "type": "field"},
+            {"ip": ["geoip:private"], "outboundTag": "direct", "type": "field"},
+            {"network": "udp", "outboundTag": "block", "type": "field"},
+            {"network": "tcp", "balancerTag": "all-proxies", "type": "field"}
+        ]
+        cfg["routing"]["balancers"] = [{
+            "tag": "all-proxies",
+            "selector": ["proxy"],
+            "strategy": {"type": "leastPing"},
+            "fallbackTag": "proxy-2"
+        }]
+        cfg["observatory"] = {
+            "subjectSelector": ["proxy"],
+            "probeUrl": "https://www.gstatic.com/generate_204",
+            "probeInterval": "30s",
+            "enableConcurrency": True
+        }
+
+    return cfg
 
 
 def parse_vless(uri):
@@ -186,17 +217,18 @@ def parse_vless(uri):
     if flow:
         user["flow"] = flow
 
+    host = p.hostname or ""
     proxy = {
-        "tag": "proxy",
         "protocol": "vless",
         "settings": {
             "vnext": [{
-                "address": p.hostname or "",
+                "address": host,
                 "port": p.port or 443,
                 "users": [user]
             }]
         },
-        "streamSettings": build_stream(q)
+        "streamSettings": build_stream(q, host),
+        "tag": "proxy"
     }
     return proxy, unquote(p.fragment) if p.fragment else ""
 
@@ -204,24 +236,28 @@ def parse_vless(uri):
 def parse_trojan(uri):
     p = urlparse(uri)
     q = parse_qs(p.query)
+    host = p.hostname or ""
     proxy = {
-        "tag": "proxy",
         "protocol": "trojan",
         "settings": {
             "servers": [{
-                "address": p.hostname or "",
+                "address": host,
                 "port": p.port or 443,
                 "password": unquote(p.username) if p.username else ""
             }]
         },
-        "streamSettings": build_stream(q)
+        "streamSettings": build_stream(q, host),
+        "tag": "proxy"
     }
     return proxy, unquote(p.fragment) if p.fragment else ""
 
 
 def main():
     text = requests.get(URL, timeout=30).text
-    configs = []
+
+    vless_list = []
+    trojan_list = []
+
     for line in text.splitlines():
         line = line.strip()
         if not line:
@@ -229,23 +265,34 @@ def main():
         try:
             if line.startswith("vless://"):
                 proxy, remark = parse_vless(line)
+                vless_list.append((proxy, remark))
             elif line.startswith("trojan://"):
                 proxy, remark = parse_trojan(line)
-            else:
-                continue
-            configs.append({"remarks": remark, "proxy": proxy})
+                trojan_list.append((proxy, remark))
         except Exception:
             pass
 
-    result = {
-        "template": TEMPLATE,
-        "tailOutbounds": TAIL_OUTBOUNDS,
-        "configs": configs
-    }
-    with open(OUT, "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=2, separators=(",", ":"))
+    result = []
 
-    print(f"done: {len(configs)} configs -> {OUT}")
+    # VLESS: 1=domain(اسم دامنه اصلی) + بعدی‌ها IP
+    for i, (proxy, remark) in enumerate(vless_list, 1):
+        title = remark if remark else f"VLESS {i}"
+        result.append(make_config(proxy, title))
+
+    # Trojan
+    for i, (proxy, remark) in enumerate(trojan_list, 1):
+        title = remark if remark else f"Trojan {i}"
+        result.append(make_config(proxy, title))
+
+    # Best Ping (اگه حداقل ۲ پروکسی داشتیم)
+    all_proxies = [p for p, _ in vless_list] + [p for p, _ in trojan_list]
+    if len(all_proxies) >= 2:
+        result.append(make_config(None, "Best Ping 🚀", is_best=True, all_proxies=all_proxies))
+
+    with open(OUT, "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=4)
+
+    print(f"done: {len(result)} configs -> {OUT}")
 
 
 if __name__ == "__main__":
