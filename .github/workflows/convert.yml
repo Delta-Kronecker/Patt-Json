@@ -2,8 +2,8 @@ name: Convert Configs
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   
-  workflow_dispatch:        
+    - cron: "0 */3 * * *"   # هر ۶ ساعت یک‌بار
+  workflow_dispatch:         # اجرای دستی
   push:
     branches:
       - main
