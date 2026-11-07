@@ -1,6 +1,6 @@
 [
     {
-        "remarks": "F&F US 🇺🇸 | @Raydikalx | 8eb746",
+        "remarks": "F&F CA 🇨🇦 | @Raydikalx | 90A79B | 90eb4d",
         "version": {
             "min": "26.2.6"
         },
@@ -60,623 +60,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "64c5f924-1c24-44a5-acff-2e3ebcd2f807",
-                                    "encryption": "none"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "streamSettings": {
-                    "network": "xhttp",
-                    "xhttpSettings": {
-                        "path": "/",
-                        "host": "nl29.dr-ping.ir",
-                        "mode": "auto"
-                    },
-                    "security": "tls",
-                    "tlsSettings": {
-                        "serverName": "nl29.dr-ping.ir",
-                        "fingerprint": "unsafe",
-                        "alpn": [
-                            "h3",
-                            "h2",
-                            "http/1.1"
-                        ],
-                        "cipherSuites": "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-                    },
-                    "finalmask": {
-                        "tcp": [
-                            {
-                                "type": "fragment",
-                                "settings": {
-                                    "packets": "tlshello",
-                                    "lengths": [
-                                        "0",
-                                        "104",
-                                        "1"
-                                    ],
-                                    "delays": [
-                                        "0"
-                                    ],
-                                    "maxSplit": "0"
-                                }
-                            },
-                            {
-                                "type": "fragment",
-                                "settings": {
-                                    "packets": "1-1",
-                                    "lengths": [
-                                        "114",
-                                        "1"
-                                    ],
-                                    "delays": [
-                                        "1"
-                                    ],
-                                    "maxSplit": "11"
-                                }
-                            }
-                        ]
-                    }
-                },
-                "tag": "proxy"
-            },
-            {
-                "protocol": "dns",
-                "settings": {
-                    "rules": [
-                        {
-                            "action": "hijack"
-                        }
-                    ]
-                },
-                "tag": "dns-out"
-            },
-            {
-                "protocol": "freedom",
-                "settings": {
-                    "domainStrategy": "UseIP"
-                },
-                "tag": "direct"
-            },
-            {
-                "protocol": "blackhole",
-                "settings": {
-                    "response": {
-                        "type": "http"
-                    }
-                },
-                "tag": "block"
-            }
-        ],
-        "routing": {
-            "domainStrategy": "IPIfNonMatch",
-            "rules": [
-                {
-                    "inboundTag": [
-                        "mixed-in"
-                    ],
-                    "port": 53,
-                    "outboundTag": "dns-out",
-                    "type": "field"
-                },
-                {
-                    "inboundTag": [
-                        "dns-in"
-                    ],
-                    "outboundTag": "dns-out",
-                    "type": "field"
-                },
-                {
-                    "inboundTag": [
-                        "remote-dns"
-                    ],
-                    "outboundTag": "proxy",
-                    "type": "field"
-                },
-                {
-                    "inboundTag": [
-                        "dns"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:private"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:private"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "network": "udp",
-                    "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "network": "tcp",
-                    "outboundTag": "proxy",
-                    "type": "field"
-                }
-            ]
-        },
-        "policy": {
-            "levels": {
-                "0": {
-                    "connIdle": 300,
-                    "handshake": 4,
-                    "uplinkOnly": 1,
-                    "downlinkOnly": 1
-                }
-            },
-            "system": {
-                "statsOutboundUplink": true,
-                "statsOutboundDownlink": true
-            }
-        },
-        "stats": {}
-    },
-    {
-        "remarks": "Sni-Spoofing US 🇺🇸 | @Raydikalx | 6b0051",
-        "version": {
-            "min": "26.2.6"
-        },
-        "log": {
-            "loglevel": "none"
-        },
-        "dns": {
-            "servers": [
-                "fakedns",
-                {
-                    "address": "https://8.8.8.8/dns-query",
-                    "tag": "remote-dns"
-                }
-            ],
-            "queryStrategy": "UseIP",
-            "tag": "dns"
-        },
-        "inbounds": [
-            {
-                "listen": "127.0.0.1",
-                "port": 10808,
-                "protocol": "mixed",
-                "settings": {
-                    "auth": "noauth",
-                    "udp": true
-                },
-                "sniffing": {
-                    "destOverride": [
-                        "http",
-                        "tls",
-                        "fakedns"
-                    ],
-                    "enabled": true,
-                    "routeOnly": true
-                },
-                "tag": "mixed-in"
-            },
-            {
-                "listen": "127.0.0.1",
-                "port": 10853,
-                "protocol": "dokodemo-door",
-                "settings": {
-                    "address": "1.1.1.1",
-                    "network": "tcp,udp",
-                    "port": 53
-                },
-                "tag": "dns-in"
-            }
-        ],
-        "outbounds": [
-            {
-                "protocol": "vless",
-                "settings": {
-                    "vnext": [
-                        {
-                            "address": "127.0.0.1",
-                            "port": 40443,
-                            "users": [
-                                {
-                                    "id": "64c5f924-1c24-44a5-acff-2e3ebcd2f807",
-                                    "encryption": "none"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "streamSettings": {
-                    "network": "xhttp",
-                    "xhttpSettings": {
-                        "path": "/",
-                        "host": "nl29.dr-ping.ir",
-                        "mode": "auto"
-                    },
-                    "security": "tls",
-                    "tlsSettings": {
-                        "serverName": "nl29.dr-ping.ir",
-                        "fingerprint": "chrome",
-                        "alpn": [
-                            "h3",
-                            "h2",
-                            "http/1.1"
-                        ]
-                    }
-                },
-                "tag": "proxy"
-            },
-            {
-                "protocol": "dns",
-                "settings": {
-                    "rules": [
-                        {
-                            "action": "hijack"
-                        }
-                    ]
-                },
-                "tag": "dns-out"
-            },
-            {
-                "protocol": "freedom",
-                "settings": {
-                    "domainStrategy": "UseIP"
-                },
-                "tag": "direct"
-            },
-            {
-                "protocol": "blackhole",
-                "settings": {
-                    "response": {
-                        "type": "http"
-                    }
-                },
-                "tag": "block"
-            }
-        ],
-        "routing": {
-            "domainStrategy": "IPIfNonMatch",
-            "rules": [
-                {
-                    "inboundTag": [
-                        "mixed-in"
-                    ],
-                    "port": 53,
-                    "outboundTag": "dns-out",
-                    "type": "field"
-                },
-                {
-                    "inboundTag": [
-                        "dns-in"
-                    ],
-                    "outboundTag": "dns-out",
-                    "type": "field"
-                },
-                {
-                    "inboundTag": [
-                        "remote-dns"
-                    ],
-                    "outboundTag": "proxy",
-                    "type": "field"
-                },
-                {
-                    "inboundTag": [
-                        "dns"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:private"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:private"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "network": "udp",
-                    "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "network": "tcp",
-                    "outboundTag": "proxy",
-                    "type": "field"
-                }
-            ]
-        },
-        "policy": {
-            "levels": {
-                "0": {
-                    "connIdle": 300,
-                    "handshake": 4,
-                    "uplinkOnly": 1,
-                    "downlinkOnly": 1
-                }
-            },
-            "system": {
-                "statsOutboundUplink": true,
-                "statsOutboundDownlink": true
-            }
-        },
-        "stats": {}
-    },
-    {
-        "remarks": "IPv6 oob US 🇺🇸 | @Raydikalx | 10c82d",
-        "version": {
-            "min": "26.2.6"
-        },
-        "log": {
-            "loglevel": "none"
-        },
-        "dns": {
-            "servers": [
-                "fakedns",
-                {
-                    "address": "https://8.8.8.8/dns-query",
-                    "tag": "remote-dns"
-                }
-            ],
-            "queryStrategy": "UseIP",
-            "tag": "dns"
-        },
-        "inbounds": [
-            {
-                "listen": "127.0.0.1",
-                "port": 10808,
-                "protocol": "mixed",
-                "settings": {
-                    "auth": "noauth",
-                    "udp": true
-                },
-                "sniffing": {
-                    "destOverride": [
-                        "http",
-                        "tls",
-                        "fakedns"
-                    ],
-                    "enabled": true,
-                    "routeOnly": true
-                },
-                "tag": "mixed-in"
-            },
-            {
-                "listen": "127.0.0.1",
-                "port": 10853,
-                "protocol": "dokodemo-door",
-                "settings": {
-                    "address": "1.1.1.1",
-                    "network": "tcp,udp",
-                    "port": 53
-                },
-                "tag": "dns-in"
-            }
-        ],
-        "outbounds": [
-            {
-                "protocol": "vless",
-                "settings": {
-                    "vnext": [
-                        {
-                            "address": "2a06:98c1:3120::7",
-                            "port": 443,
-                            "users": [
-                                {
-                                    "id": "64c5f924-1c24-44a5-acff-2e3ebcd2f807",
-                                    "encryption": "none"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "streamSettings": {
-                    "network": "xhttp",
-                    "xhttpSettings": {
-                        "path": "/",
-                        "host": "nl29.dr-ping.ir",
-                        "mode": "auto"
-                    },
-                    "security": "tls",
-                    "tlsSettings": {
-                        "serverName": "nl29.dr-ping.ir",
-                        "fingerprint": "hellochrome_120",
-                        "alpn": [
-                            "h3",
-                            "h2",
-                            "http/1.1"
-                        ]
-                    },
-                    "finalmask": {
-                        "tcp": [
-                            {
-                                "type": "merge",
-                                "settings": {
-                                    "times": 100,
-                                    "delayMs": 30,
-                                    "maxBytes": 16384
-                                }
-                            }
-                        ]
-                    }
-                },
-                "tag": "proxy"
-            },
-            {
-                "protocol": "dns",
-                "settings": {
-                    "rules": [
-                        {
-                            "action": "hijack"
-                        }
-                    ]
-                },
-                "tag": "dns-out"
-            },
-            {
-                "protocol": "freedom",
-                "settings": {
-                    "domainStrategy": "UseIP"
-                },
-                "tag": "direct"
-            },
-            {
-                "protocol": "blackhole",
-                "settings": {
-                    "response": {
-                        "type": "http"
-                    }
-                },
-                "tag": "block"
-            }
-        ],
-        "routing": {
-            "domainStrategy": "IPIfNonMatch",
-            "rules": [
-                {
-                    "inboundTag": [
-                        "mixed-in"
-                    ],
-                    "port": 53,
-                    "outboundTag": "dns-out",
-                    "type": "field"
-                },
-                {
-                    "inboundTag": [
-                        "dns-in"
-                    ],
-                    "outboundTag": "dns-out",
-                    "type": "field"
-                },
-                {
-                    "inboundTag": [
-                        "remote-dns"
-                    ],
-                    "outboundTag": "proxy",
-                    "type": "field"
-                },
-                {
-                    "inboundTag": [
-                        "dns"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:private"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:private"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "network": "udp",
-                    "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "network": "tcp",
-                    "outboundTag": "proxy",
-                    "type": "field"
-                }
-            ]
-        },
-        "policy": {
-            "levels": {
-                "0": {
-                    "connIdle": 300,
-                    "handshake": 4,
-                    "uplinkOnly": 1,
-                    "downlinkOnly": 1
-                }
-            },
-            "system": {
-                "statsOutboundUplink": true,
-                "statsOutboundDownlink": true
-            }
-        },
-        "stats": {}
-    },
-    {
-        "remarks": "F&F CF中转_110620245 | 8efce8",
-        "version": {
-            "min": "26.2.6"
-        },
-        "log": {
-            "loglevel": "none"
-        },
-        "dns": {
-            "servers": [
-                "fakedns",
-                {
-                    "address": "https://8.8.8.8/dns-query",
-                    "tag": "remote-dns"
-                }
-            ],
-            "queryStrategy": "UseIP",
-            "tag": "dns"
-        },
-        "inbounds": [
-            {
-                "listen": "127.0.0.1",
-                "port": 10808,
-                "protocol": "mixed",
-                "settings": {
-                    "auth": "noauth",
-                    "udp": true
-                },
-                "sniffing": {
-                    "destOverride": [
-                        "http",
-                        "tls",
-                        "fakedns"
-                    ],
-                    "enabled": true,
-                    "routeOnly": true
-                },
-                "tag": "mixed-in"
-            },
-            {
-                "listen": "127.0.0.1",
-                "port": 10853,
-                "protocol": "dokodemo-door",
-                "settings": {
-                    "address": "1.1.1.1",
-                    "network": "tcp,udp",
-                    "port": 53
-                },
-                "tag": "dns-in"
-            }
-        ],
-        "outbounds": [
-            {
-                "protocol": "vless",
-                "settings": {
-                    "vnext": [
-                        {
-                            "address": "188.114.98.0",
-                            "port": 443,
-                            "users": [
-                                {
-                                    "id": "50414e45-4c5f-5a45-5553-52108a2d5224",
+                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
                                     "encryption": "none"
                                 }
                             ]
@@ -686,12 +70,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "web-app-nr6wpa.app-tp57xz.workers.dev",
-                        "path": "/api/ws"
+                        "host": "jp3.yohototo.top",
+                        "path": "/tyxyws"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "web-app-nr6wpa.app-tp57xz.workers.dev",
+                        "serverName": "jp3.yohototo.top",
                         "fingerprint": "unsafe",
                         "alpn": [
                             "http/1.1"
@@ -837,7 +221,7 @@
         "stats": {}
     },
     {
-        "remarks": "Sni-Spoofing CF中转_110620245 | fb01b7",
+        "remarks": "Sni-Spoofing CA 🇨🇦 | @Raydikalx | 90A79B | 5b0f77",
         "version": {
             "min": "26.2.6"
         },
@@ -897,7 +281,7 @@
                             "port": 40443,
                             "users": [
                                 {
-                                    "id": "50414e45-4c5f-5a45-5553-52108a2d5224",
+                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
                                     "encryption": "none"
                                 }
                             ]
@@ -907,12 +291,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "web-app-nr6wpa.app-tp57xz.workers.dev",
-                        "path": "/api/ws"
+                        "host": "jp3.yohototo.top",
+                        "path": "/tyxyws"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "web-app-nr6wpa.app-tp57xz.workers.dev",
+                        "serverName": "jp3.yohototo.top",
                         "fingerprint": "chrome",
                         "alpn": [
                             "http/1.1"
@@ -1024,7 +408,7 @@
         "stats": {}
     },
     {
-        "remarks": "IPv6 oob CF中转_110620245 | de342f",
+        "remarks": "IPv6 oob CA 🇨🇦 | @Raydikalx | 90A79B | 65b722",
         "version": {
             "min": "26.2.6"
         },
@@ -1084,7 +468,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "50414e45-4c5f-5a45-5553-52108a2d5224",
+                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
                                     "encryption": "none"
                                 }
                             ]
@@ -1094,12 +478,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "web-app-nr6wpa.app-tp57xz.workers.dev",
-                        "path": "/api/ws"
+                        "host": "jp3.yohototo.top",
+                        "path": "/tyxyws"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "web-app-nr6wpa.app-tp57xz.workers.dev",
+                        "serverName": "jp3.yohototo.top",
                         "fingerprint": "hellochrome_120",
                         "alpn": [
                             "http/1.1"
@@ -1223,7 +607,7 @@
         "stats": {}
     },
     {
-        "remarks": "F&F CF中转_110620688 | fe5164",
+        "remarks": "F&F @DeltaKroneckerGithub | 0cddc5",
         "version": {
             "min": "26.2.6"
         },
@@ -1283,7 +667,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "50414e45-4c5f-5a45-5553-52108a2d5224",
+                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
                                     "encryption": "none"
                                 }
                             ]
@@ -1293,12 +677,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "web-app-nr6wpa.app-tp57xz.workers.dev",
-                        "path": "/api/ws"
+                        "host": "jp3.yohototo.top",
+                        "path": "/tyxyws"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "web-app-nr6wpa.app-tp57xz.workers.dev",
+                        "serverName": "jp3.yohototo.top",
                         "fingerprint": "unsafe",
                         "alpn": [
                             "http/1.1"
@@ -1444,7 +828,7 @@
         "stats": {}
     },
     {
-        "remarks": "Sni-Spoofing CF中转_110620688 | c22543",
+        "remarks": "Sni-Spoofing @DeltaKroneckerGithub | eab370",
         "version": {
             "min": "26.2.6"
         },
@@ -1504,7 +888,7 @@
                             "port": 40443,
                             "users": [
                                 {
-                                    "id": "50414e45-4c5f-5a45-5553-52108a2d5224",
+                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
                                     "encryption": "none"
                                 }
                             ]
@@ -1514,12 +898,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "web-app-nr6wpa.app-tp57xz.workers.dev",
-                        "path": "/api/ws"
+                        "host": "jp3.yohototo.top",
+                        "path": "/tyxyws"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "web-app-nr6wpa.app-tp57xz.workers.dev",
+                        "serverName": "jp3.yohototo.top",
                         "fingerprint": "chrome",
                         "alpn": [
                             "http/1.1"
@@ -1631,7 +1015,7 @@
         "stats": {}
     },
     {
-        "remarks": "IPv6 oob CF中转_110620688 | 0bbab0",
+        "remarks": "IPv6 oob @DeltaKroneckerGithub | 925def",
         "version": {
             "min": "26.2.6"
         },
@@ -1691,7 +1075,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "50414e45-4c5f-5a45-5553-52108a2d5224",
+                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
                                     "encryption": "none"
                                 }
                             ]
@@ -1701,12 +1085,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "web-app-nr6wpa.app-tp57xz.workers.dev",
-                        "path": "/api/ws"
+                        "host": "jp3.yohototo.top",
+                        "path": "/tyxyws"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "web-app-nr6wpa.app-tp57xz.workers.dev",
+                        "serverName": "jp3.yohototo.top",
                         "fingerprint": "hellochrome_120",
                         "alpn": [
                             "http/1.1"
@@ -1830,7 +1214,7 @@
         "stats": {}
     },
     {
-        "remarks": "F&F CA 🇨🇦 | @Raydikalx | 87FFEE | edd1d8",
+        "remarks": "F&F SG 🇸🇬 | @Raydikalx | CCB1A0 | 209a41",
         "version": {
             "min": "26.2.6"
         },
@@ -1890,7 +1274,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
+                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
                                     "encryption": "none"
                                 }
                             ]
@@ -1900,12 +1284,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "u.srilankangrill.online",
-                        "path": "/"
+                        "host": "jp3.yohototo.top",
+                        "path": "/tyxyws"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "u.srilankangrill.online",
+                        "serverName": "jp3.yohototo.top",
                         "fingerprint": "unsafe",
                         "alpn": [
                             "http/1.1"
@@ -2051,7 +1435,7 @@
         "stats": {}
     },
     {
-        "remarks": "Sni-Spoofing CA 🇨🇦 | @Raydikalx | 87FFEE | 3851fb",
+        "remarks": "Sni-Spoofing SG 🇸🇬 | @Raydikalx | CCB1A0 | 6fdfdf",
         "version": {
             "min": "26.2.6"
         },
@@ -2111,7 +1495,7 @@
                             "port": 40443,
                             "users": [
                                 {
-                                    "id": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
+                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
                                     "encryption": "none"
                                 }
                             ]
@@ -2121,12 +1505,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "u.srilankangrill.online",
-                        "path": "/"
+                        "host": "jp3.yohototo.top",
+                        "path": "/tyxyws"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "u.srilankangrill.online",
+                        "serverName": "jp3.yohototo.top",
                         "fingerprint": "chrome",
                         "alpn": [
                             "http/1.1"
@@ -2238,7 +1622,7 @@
         "stats": {}
     },
     {
-        "remarks": "IPv6 oob CA 🇨🇦 | @Raydikalx | 87FFEE | 13519a",
+        "remarks": "IPv6 oob SG 🇸🇬 | @Raydikalx | CCB1A0 | fa1e64",
         "version": {
             "min": "26.2.6"
         },
@@ -2298,7 +1682,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
+                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
                                     "encryption": "none"
                                 }
                             ]
@@ -2308,12 +1692,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "u.srilankangrill.online",
-                        "path": "/"
+                        "host": "jp3.yohototo.top",
+                        "path": "/tyxyws"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "u.srilankangrill.online",
+                        "serverName": "jp3.yohototo.top",
                         "fingerprint": "hellochrome_120",
                         "alpn": [
                             "http/1.1"
@@ -2437,7 +1821,7 @@
         "stats": {}
     },
     {
-        "remarks": "F&F @DeltaKroneckerGithub | 107cac",
+        "remarks": "F&F ltf8.jueson.de5.net | trojan-ws | 84c146",
         "version": {
             "min": "26.2.6"
         },
@@ -2489,30 +1873,25 @@
         ],
         "outbounds": [
             {
-                "protocol": "vless",
+                "protocol": "trojan",
                 "settings": {
-                    "vnext": [
+                    "servers": [
                         {
                             "address": "188.114.98.0",
                             "port": 443,
-                            "users": [
-                                {
-                                    "id": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
-                                    "encryption": "none"
-                                }
-                            ]
+                            "password": "883e3cc8-9613-4f2d-8c42-0dd3d429db55"
                         }
                     ]
                 },
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "u.srilankangrill.online",
-                        "path": "/"
+                        "host": "ltf8.jueson.de5.net",
+                        "path": "/order/ads/"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "u.srilankangrill.online",
+                        "serverName": "ltf8.jueson.de5.net",
                         "fingerprint": "unsafe",
                         "alpn": [
                             "http/1.1"
@@ -2658,7 +2037,7 @@
         "stats": {}
     },
     {
-        "remarks": "Sni-Spoofing @DeltaKroneckerGithub | d9ad92",
+        "remarks": "Sni-Spoofing ltf8.jueson.de5.net | trojan-ws | f669f9",
         "version": {
             "min": "26.2.6"
         },
@@ -2710,30 +2089,25 @@
         ],
         "outbounds": [
             {
-                "protocol": "vless",
+                "protocol": "trojan",
                 "settings": {
-                    "vnext": [
+                    "servers": [
                         {
                             "address": "127.0.0.1",
                             "port": 40443,
-                            "users": [
-                                {
-                                    "id": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
-                                    "encryption": "none"
-                                }
-                            ]
+                            "password": "883e3cc8-9613-4f2d-8c42-0dd3d429db55"
                         }
                     ]
                 },
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "u.srilankangrill.online",
-                        "path": "/"
+                        "host": "ltf8.jueson.de5.net",
+                        "path": "/order/ads/"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "u.srilankangrill.online",
+                        "serverName": "ltf8.jueson.de5.net",
                         "fingerprint": "chrome",
                         "alpn": [
                             "http/1.1"
@@ -2845,7 +2219,7 @@
         "stats": {}
     },
     {
-        "remarks": "IPv6 oob @DeltaKroneckerGithub | d3a476",
+        "remarks": "IPv6 oob ltf8.jueson.de5.net | trojan-ws | a29200",
         "version": {
             "min": "26.2.6"
         },
@@ -2897,30 +2271,617 @@
         ],
         "outbounds": [
             {
-                "protocol": "vless",
+                "protocol": "trojan",
                 "settings": {
-                    "vnext": [
+                    "servers": [
                         {
                             "address": "2a06:98c1:3120::7",
                             "port": 443,
-                            "users": [
-                                {
-                                    "id": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
-                                    "encryption": "none"
-                                }
-                            ]
+                            "password": "883e3cc8-9613-4f2d-8c42-0dd3d429db55"
                         }
                     ]
                 },
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "u.srilankangrill.online",
-                        "path": "/"
+                        "host": "ltf8.jueson.de5.net",
+                        "path": "/order/ads/"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "u.srilankangrill.online",
+                        "serverName": "ltf8.jueson.de5.net",
+                        "fingerprint": "hellochrome_120",
+                        "alpn": [
+                            "http/1.1"
+                        ]
+                    },
+                    "finalmask": {
+                        "tcp": [
+                            {
+                                "type": "merge",
+                                "settings": {
+                                    "times": 100,
+                                    "delayMs": 30,
+                                    "maxBytes": 16384
+                                }
+                            }
+                        ]
+                    }
+                },
+                "tag": "proxy"
+            },
+            {
+                "protocol": "dns",
+                "settings": {
+                    "rules": [
+                        {
+                            "action": "hijack"
+                        }
+                    ]
+                },
+                "tag": "dns-out"
+            },
+            {
+                "protocol": "freedom",
+                "settings": {
+                    "domainStrategy": "UseIP"
+                },
+                "tag": "direct"
+            },
+            {
+                "protocol": "blackhole",
+                "settings": {
+                    "response": {
+                        "type": "http"
+                    }
+                },
+                "tag": "block"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {
+                    "inboundTag": [
+                        "mixed-in"
+                    ],
+                    "port": 53,
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "remote-dns"
+                    ],
+                    "outboundTag": "proxy",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "domain": [
+                        "geosite:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "geoip:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "network": "udp",
+                    "outboundTag": "block",
+                    "type": "field"
+                },
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        },
+        "policy": {
+            "levels": {
+                "0": {
+                    "connIdle": 300,
+                    "handshake": 4,
+                    "uplinkOnly": 1,
+                    "downlinkOnly": 1
+                }
+            },
+            "system": {
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }
+        },
+        "stats": {}
+    },
+    {
+        "remarks": "F&F ltf8.jueson.de5.net | trojan-ws | f62e39",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "none"
+        },
+        "dns": {
+            "servers": [
+                "fakedns",
+                {
+                    "address": "https://8.8.8.8/dns-query",
+                    "tag": "remote-dns"
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "listen": "127.0.0.1",
+                "port": 10808,
+                "protocol": "mixed",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls",
+                        "fakedns"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "mixed-in"
+            },
+            {
+                "listen": "127.0.0.1",
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "188.114.98.0",
+                            "port": 443,
+                            "password": "883e3cc8-9613-4f2d-8c42-0dd3d429db55"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "ltf8.jueson.de5.net",
+                        "path": "/categories/community/"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "ltf8.jueson.de5.net",
+                        "fingerprint": "unsafe",
+                        "alpn": [
+                            "http/1.1"
+                        ],
+                        "cipherSuites": "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
+                    },
+                    "finalmask": {
+                        "tcp": [
+                            {
+                                "type": "fragment",
+                                "settings": {
+                                    "packets": "tlshello",
+                                    "lengths": [
+                                        "0",
+                                        "104",
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "0"
+                                    ],
+                                    "maxSplit": "0"
+                                }
+                            },
+                            {
+                                "type": "fragment",
+                                "settings": {
+                                    "packets": "1-1",
+                                    "lengths": [
+                                        "114",
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "1"
+                                    ],
+                                    "maxSplit": "11"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "tag": "proxy"
+            },
+            {
+                "protocol": "dns",
+                "settings": {
+                    "rules": [
+                        {
+                            "action": "hijack"
+                        }
+                    ]
+                },
+                "tag": "dns-out"
+            },
+            {
+                "protocol": "freedom",
+                "settings": {
+                    "domainStrategy": "UseIP"
+                },
+                "tag": "direct"
+            },
+            {
+                "protocol": "blackhole",
+                "settings": {
+                    "response": {
+                        "type": "http"
+                    }
+                },
+                "tag": "block"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {
+                    "inboundTag": [
+                        "mixed-in"
+                    ],
+                    "port": 53,
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "remote-dns"
+                    ],
+                    "outboundTag": "proxy",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "domain": [
+                        "geosite:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "geoip:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "network": "udp",
+                    "outboundTag": "block",
+                    "type": "field"
+                },
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        },
+        "policy": {
+            "levels": {
+                "0": {
+                    "connIdle": 300,
+                    "handshake": 4,
+                    "uplinkOnly": 1,
+                    "downlinkOnly": 1
+                }
+            },
+            "system": {
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }
+        },
+        "stats": {}
+    },
+    {
+        "remarks": "Sni-Spoofing ltf8.jueson.de5.net | trojan-ws | 9dfbdb",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "none"
+        },
+        "dns": {
+            "servers": [
+                "fakedns",
+                {
+                    "address": "https://8.8.8.8/dns-query",
+                    "tag": "remote-dns"
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "listen": "127.0.0.1",
+                "port": 10808,
+                "protocol": "mixed",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls",
+                        "fakedns"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "mixed-in"
+            },
+            {
+                "listen": "127.0.0.1",
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "127.0.0.1",
+                            "port": 40443,
+                            "password": "883e3cc8-9613-4f2d-8c42-0dd3d429db55"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "ltf8.jueson.de5.net",
+                        "path": "/categories/community/"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "ltf8.jueson.de5.net",
+                        "fingerprint": "chrome",
+                        "alpn": [
+                            "http/1.1"
+                        ]
+                    }
+                },
+                "tag": "proxy"
+            },
+            {
+                "protocol": "dns",
+                "settings": {
+                    "rules": [
+                        {
+                            "action": "hijack"
+                        }
+                    ]
+                },
+                "tag": "dns-out"
+            },
+            {
+                "protocol": "freedom",
+                "settings": {
+                    "domainStrategy": "UseIP"
+                },
+                "tag": "direct"
+            },
+            {
+                "protocol": "blackhole",
+                "settings": {
+                    "response": {
+                        "type": "http"
+                    }
+                },
+                "tag": "block"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {
+                    "inboundTag": [
+                        "mixed-in"
+                    ],
+                    "port": 53,
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "remote-dns"
+                    ],
+                    "outboundTag": "proxy",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "domain": [
+                        "geosite:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "geoip:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "network": "udp",
+                    "outboundTag": "block",
+                    "type": "field"
+                },
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        },
+        "policy": {
+            "levels": {
+                "0": {
+                    "connIdle": 300,
+                    "handshake": 4,
+                    "uplinkOnly": 1,
+                    "downlinkOnly": 1
+                }
+            },
+            "system": {
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }
+        },
+        "stats": {}
+    },
+    {
+        "remarks": "IPv6 oob ltf8.jueson.de5.net | trojan-ws | 072e26",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "none"
+        },
+        "dns": {
+            "servers": [
+                "fakedns",
+                {
+                    "address": "https://8.8.8.8/dns-query",
+                    "tag": "remote-dns"
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "listen": "127.0.0.1",
+                "port": 10808,
+                "protocol": "mixed",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls",
+                        "fakedns"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "mixed-in"
+            },
+            {
+                "listen": "127.0.0.1",
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "2a06:98c1:3120::7",
+                            "port": 443,
+                            "password": "883e3cc8-9613-4f2d-8c42-0dd3d429db55"
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "ltf8.jueson.de5.net",
+                        "path": "/categories/community/"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "ltf8.jueson.de5.net",
                         "fingerprint": "hellochrome_120",
                         "alpn": [
                             "http/1.1"
@@ -3104,7 +3065,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "64c5f924-1c24-44a5-acff-2e3ebcd2f807",
+                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
                                     "encryption": "none"
                                 }
                             ]
@@ -3112,19 +3073,16 @@
                     ]
                 },
                 "streamSettings": {
-                    "network": "xhttp",
-                    "xhttpSettings": {
-                        "path": "/",
-                        "host": "nl29.dr-ping.ir",
-                        "mode": "auto"
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "jp3.yohototo.top",
+                        "path": "/tyxyws"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "nl29.dr-ping.ir",
+                        "serverName": "jp3.yohototo.top",
                         "fingerprint": "unsafe",
                         "alpn": [
-                            "h3",
-                            "h2",
                             "http/1.1"
                         ],
                         "cipherSuites": "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
@@ -3174,7 +3132,7 @@
                             "port": 40443,
                             "users": [
                                 {
-                                    "id": "64c5f924-1c24-44a5-acff-2e3ebcd2f807",
+                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
                                     "encryption": "none"
                                 }
                             ]
@@ -3182,19 +3140,16 @@
                     ]
                 },
                 "streamSettings": {
-                    "network": "xhttp",
-                    "xhttpSettings": {
-                        "path": "/",
-                        "host": "nl29.dr-ping.ir",
-                        "mode": "auto"
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "jp3.yohototo.top",
+                        "path": "/tyxyws"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "nl29.dr-ping.ir",
+                        "serverName": "jp3.yohototo.top",
                         "fingerprint": "chrome",
                         "alpn": [
-                            "h3",
-                            "h2",
                             "http/1.1"
                         ]
                     }
@@ -3210,7 +3165,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "64c5f924-1c24-44a5-acff-2e3ebcd2f807",
+                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
                                     "encryption": "none"
                                 }
                             ]
@@ -3218,19 +3173,16 @@
                     ]
                 },
                 "streamSettings": {
-                    "network": "xhttp",
-                    "xhttpSettings": {
-                        "path": "/",
-                        "host": "nl29.dr-ping.ir",
-                        "mode": "auto"
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "jp3.yohototo.top",
+                        "path": "/tyxyws"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "nl29.dr-ping.ir",
+                        "serverName": "jp3.yohototo.top",
                         "fingerprint": "hellochrome_120",
                         "alpn": [
-                            "h3",
-                            "h2",
                             "http/1.1"
                         ]
                     },
@@ -3258,7 +3210,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "50414e45-4c5f-5a45-5553-52108a2d5224",
+                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
                                     "encryption": "none"
                                 }
                             ]
@@ -3268,12 +3220,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "web-app-nr6wpa.app-tp57xz.workers.dev",
-                        "path": "/api/ws"
+                        "host": "jp3.yohototo.top",
+                        "path": "/tyxyws"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "web-app-nr6wpa.app-tp57xz.workers.dev",
+                        "serverName": "jp3.yohototo.top",
                         "fingerprint": "unsafe",
                         "alpn": [
                             "http/1.1"
@@ -3325,7 +3277,7 @@
                             "port": 40443,
                             "users": [
                                 {
-                                    "id": "50414e45-4c5f-5a45-5553-52108a2d5224",
+                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
                                     "encryption": "none"
                                 }
                             ]
@@ -3335,12 +3287,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "web-app-nr6wpa.app-tp57xz.workers.dev",
-                        "path": "/api/ws"
+                        "host": "jp3.yohototo.top",
+                        "path": "/tyxyws"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "web-app-nr6wpa.app-tp57xz.workers.dev",
+                        "serverName": "jp3.yohototo.top",
                         "fingerprint": "chrome",
                         "alpn": [
                             "http/1.1"
@@ -3358,7 +3310,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "50414e45-4c5f-5a45-5553-52108a2d5224",
+                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
                                     "encryption": "none"
                                 }
                             ]
@@ -3368,12 +3320,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "web-app-nr6wpa.app-tp57xz.workers.dev",
-                        "path": "/api/ws"
+                        "host": "jp3.yohototo.top",
+                        "path": "/tyxyws"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "web-app-nr6wpa.app-tp57xz.workers.dev",
+                        "serverName": "jp3.yohototo.top",
                         "fingerprint": "hellochrome_120",
                         "alpn": [
                             "http/1.1"
@@ -3403,7 +3355,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "50414e45-4c5f-5a45-5553-52108a2d5224",
+                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
                                     "encryption": "none"
                                 }
                             ]
@@ -3413,12 +3365,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "web-app-nr6wpa.app-tp57xz.workers.dev",
-                        "path": "/api/ws"
+                        "host": "jp3.yohototo.top",
+                        "path": "/tyxyws"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "web-app-nr6wpa.app-tp57xz.workers.dev",
+                        "serverName": "jp3.yohototo.top",
                         "fingerprint": "unsafe",
                         "alpn": [
                             "http/1.1"
@@ -3470,7 +3422,7 @@
                             "port": 40443,
                             "users": [
                                 {
-                                    "id": "50414e45-4c5f-5a45-5553-52108a2d5224",
+                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
                                     "encryption": "none"
                                 }
                             ]
@@ -3480,12 +3432,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "web-app-nr6wpa.app-tp57xz.workers.dev",
-                        "path": "/api/ws"
+                        "host": "jp3.yohototo.top",
+                        "path": "/tyxyws"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "web-app-nr6wpa.app-tp57xz.workers.dev",
+                        "serverName": "jp3.yohototo.top",
                         "fingerprint": "chrome",
                         "alpn": [
                             "http/1.1"
@@ -3503,7 +3455,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "50414e45-4c5f-5a45-5553-52108a2d5224",
+                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
                                     "encryption": "none"
                                 }
                             ]
@@ -3513,12 +3465,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "web-app-nr6wpa.app-tp57xz.workers.dev",
-                        "path": "/api/ws"
+                        "host": "jp3.yohototo.top",
+                        "path": "/tyxyws"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "web-app-nr6wpa.app-tp57xz.workers.dev",
+                        "serverName": "jp3.yohototo.top",
                         "fingerprint": "hellochrome_120",
                         "alpn": [
                             "http/1.1"
@@ -3540,30 +3492,25 @@
                 "tag": "proxy-9"
             },
             {
-                "protocol": "vless",
+                "protocol": "trojan",
                 "settings": {
-                    "vnext": [
+                    "servers": [
                         {
                             "address": "188.114.98.0",
                             "port": 443,
-                            "users": [
-                                {
-                                    "id": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
-                                    "encryption": "none"
-                                }
-                            ]
+                            "password": "883e3cc8-9613-4f2d-8c42-0dd3d429db55"
                         }
                     ]
                 },
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "u.srilankangrill.online",
-                        "path": "/"
+                        "host": "ltf8.jueson.de5.net",
+                        "path": "/order/ads/"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "u.srilankangrill.online",
+                        "serverName": "ltf8.jueson.de5.net",
                         "fingerprint": "unsafe",
                         "alpn": [
                             "http/1.1"
@@ -3607,30 +3554,25 @@
                 "tag": "proxy-10"
             },
             {
-                "protocol": "vless",
+                "protocol": "trojan",
                 "settings": {
-                    "vnext": [
+                    "servers": [
                         {
                             "address": "127.0.0.1",
                             "port": 40443,
-                            "users": [
-                                {
-                                    "id": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
-                                    "encryption": "none"
-                                }
-                            ]
+                            "password": "883e3cc8-9613-4f2d-8c42-0dd3d429db55"
                         }
                     ]
                 },
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "u.srilankangrill.online",
-                        "path": "/"
+                        "host": "ltf8.jueson.de5.net",
+                        "path": "/order/ads/"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "u.srilankangrill.online",
+                        "serverName": "ltf8.jueson.de5.net",
                         "fingerprint": "chrome",
                         "alpn": [
                             "http/1.1"
@@ -3640,30 +3582,25 @@
                 "tag": "proxy-11"
             },
             {
-                "protocol": "vless",
+                "protocol": "trojan",
                 "settings": {
-                    "vnext": [
+                    "servers": [
                         {
                             "address": "2a06:98c1:3120::7",
                             "port": 443,
-                            "users": [
-                                {
-                                    "id": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
-                                    "encryption": "none"
-                                }
-                            ]
+                            "password": "883e3cc8-9613-4f2d-8c42-0dd3d429db55"
                         }
                     ]
                 },
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "u.srilankangrill.online",
-                        "path": "/"
+                        "host": "ltf8.jueson.de5.net",
+                        "path": "/order/ads/"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "u.srilankangrill.online",
+                        "serverName": "ltf8.jueson.de5.net",
                         "fingerprint": "hellochrome_120",
                         "alpn": [
                             "http/1.1"
@@ -3685,30 +3622,25 @@
                 "tag": "proxy-12"
             },
             {
-                "protocol": "vless",
+                "protocol": "trojan",
                 "settings": {
-                    "vnext": [
+                    "servers": [
                         {
                             "address": "188.114.98.0",
                             "port": 443,
-                            "users": [
-                                {
-                                    "id": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
-                                    "encryption": "none"
-                                }
-                            ]
+                            "password": "883e3cc8-9613-4f2d-8c42-0dd3d429db55"
                         }
                     ]
                 },
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "u.srilankangrill.online",
-                        "path": "/"
+                        "host": "ltf8.jueson.de5.net",
+                        "path": "/categories/community/"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "u.srilankangrill.online",
+                        "serverName": "ltf8.jueson.de5.net",
                         "fingerprint": "unsafe",
                         "alpn": [
                             "http/1.1"
@@ -3752,30 +3684,25 @@
                 "tag": "proxy-13"
             },
             {
-                "protocol": "vless",
+                "protocol": "trojan",
                 "settings": {
-                    "vnext": [
+                    "servers": [
                         {
                             "address": "127.0.0.1",
                             "port": 40443,
-                            "users": [
-                                {
-                                    "id": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
-                                    "encryption": "none"
-                                }
-                            ]
+                            "password": "883e3cc8-9613-4f2d-8c42-0dd3d429db55"
                         }
                     ]
                 },
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "u.srilankangrill.online",
-                        "path": "/"
+                        "host": "ltf8.jueson.de5.net",
+                        "path": "/categories/community/"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "u.srilankangrill.online",
+                        "serverName": "ltf8.jueson.de5.net",
                         "fingerprint": "chrome",
                         "alpn": [
                             "http/1.1"
@@ -3785,30 +3712,25 @@
                 "tag": "proxy-14"
             },
             {
-                "protocol": "vless",
+                "protocol": "trojan",
                 "settings": {
-                    "vnext": [
+                    "servers": [
                         {
                             "address": "2a06:98c1:3120::7",
                             "port": 443,
-                            "users": [
-                                {
-                                    "id": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
-                                    "encryption": "none"
-                                }
-                            ]
+                            "password": "883e3cc8-9613-4f2d-8c42-0dd3d429db55"
                         }
                     ]
                 },
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "u.srilankangrill.online",
-                        "path": "/"
+                        "host": "ltf8.jueson.de5.net",
+                        "path": "/categories/community/"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "u.srilankangrill.online",
+                        "serverName": "ltf8.jueson.de5.net",
                         "fingerprint": "hellochrome_120",
                         "alpn": [
                             "http/1.1"
