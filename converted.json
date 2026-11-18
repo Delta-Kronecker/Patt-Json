@@ -1,6 +1,6 @@
 [
     {
-        "remarks": "F&F SG 🇸🇬 | @Raydikalx | 15CE37 | 8c5c1a",
+        "remarks": "F&F CA 🇨🇦 | @Raydikalx | B7E92E | a9a7dc",
         "version": {
             "min": "26.2.6"
         },
@@ -60,22 +60,23 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "1af5253b-75e6-4e2c-8b9e-2b7b92dbb845",
-                                    "encryption": "none"
+                                    "id": "f7a9b27c-fd3c-4177-9f66-8be4dd726d0b",
+                                    "encryption": "none",
+                                    "flow": "xtls-rprx-vision"
                                 }
                             ]
                         }
                     ]
                 },
                 "streamSettings": {
-                    "network": "httpupgrade",
-                    "httpupgradeSettings": {
-                        "path": "/msn",
-                        "host": "ded2http.samcdn.shop"
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "rainman.exploring.cyou",
+                        "path": "/t.me-SubGift"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ded2http.samcdn.shop",
+                        "serverName": "rainman.exploring.cyou",
                         "fingerprint": "unsafe",
                         "alpn": [
                             "http/1.1"
@@ -221,7 +222,7 @@
         "stats": {}
     },
     {
-        "remarks": "Sni-Spoofing SG 🇸🇬 | @Raydikalx | 15CE37 | 7a1ec0",
+        "remarks": "Sni-Spoofing CA 🇨🇦 | @Raydikalx | B7E92E | b67998",
         "version": {
             "min": "26.2.6"
         },
@@ -281,22 +282,23 @@
                             "port": 40443,
                             "users": [
                                 {
-                                    "id": "1af5253b-75e6-4e2c-8b9e-2b7b92dbb845",
-                                    "encryption": "none"
+                                    "id": "f7a9b27c-fd3c-4177-9f66-8be4dd726d0b",
+                                    "encryption": "none",
+                                    "flow": "xtls-rprx-vision"
                                 }
                             ]
                         }
                     ]
                 },
                 "streamSettings": {
-                    "network": "httpupgrade",
-                    "httpupgradeSettings": {
-                        "path": "/msn",
-                        "host": "ded2http.samcdn.shop"
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "rainman.exploring.cyou",
+                        "path": "/t.me-SubGift"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ded2http.samcdn.shop",
+                        "serverName": "rainman.exploring.cyou",
                         "fingerprint": "chrome",
                         "alpn": [
                             "http/1.1"
@@ -408,7 +410,7 @@
         "stats": {}
     },
     {
-        "remarks": "IPv6 oob SG 🇸🇬 | @Raydikalx | 15CE37 | 71053e",
+        "remarks": "IPv6 oob CA 🇨🇦 | @Raydikalx | B7E92E | 0d4ce8",
         "version": {
             "min": "26.2.6"
         },
@@ -468,22 +470,23 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "1af5253b-75e6-4e2c-8b9e-2b7b92dbb845",
-                                    "encryption": "none"
+                                    "id": "f7a9b27c-fd3c-4177-9f66-8be4dd726d0b",
+                                    "encryption": "none",
+                                    "flow": "xtls-rprx-vision"
                                 }
                             ]
                         }
                     ]
                 },
                 "streamSettings": {
-                    "network": "httpupgrade",
-                    "httpupgradeSettings": {
-                        "path": "/msn",
-                        "host": "ded2http.samcdn.shop"
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "rainman.exploring.cyou",
+                        "path": "/t.me-SubGift"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ded2http.samcdn.shop",
+                        "serverName": "rainman.exploring.cyou",
                         "fingerprint": "hellochrome_120",
                         "alpn": [
                             "http/1.1"
@@ -607,7 +610,7 @@
         "stats": {}
     },
     {
-        "remarks": "F&F CA 🇨🇦 | @Raydikalx | 084D30 | c8b8b1",
+        "remarks": "F&F ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ = @ꜰxxɴᴇᴛ👻 | b3e991",
         "version": {
             "min": "26.2.6"
         },
@@ -667,7 +670,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "48eb716d-6121-43c1-9dd2-9a2a25bf3178",
+                                    "id": "50414e45-4c5f-5a45-5553-616fe0a83435",
                                     "encryption": "none"
                                 }
                             ]
@@ -677,12 +680,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "ws137.mydosss.ccwu.cc",
-                        "path": "/3b575ddc8596"
+                        "host": "u2z9itefuvzs.klznyaefurxs.workers.dev",
+                        "path": "/stream/PANEL_ZEUS/616fe0a83435"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "serverName": "u2z9itefuvzs.klznyaefurxs.workers.dev",
                         "fingerprint": "unsafe",
                         "alpn": [
                             "http/1.1"
@@ -828,7 +831,7 @@
         "stats": {}
     },
     {
-        "remarks": "Sni-Spoofing CA 🇨🇦 | @Raydikalx | 084D30 | 021f50",
+        "remarks": "Sni-Spoofing ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ = @ꜰxxɴᴇᴛ👻 | 77ff01",
         "version": {
             "min": "26.2.6"
         },
@@ -888,7 +891,7 @@
                             "port": 40443,
                             "users": [
                                 {
-                                    "id": "48eb716d-6121-43c1-9dd2-9a2a25bf3178",
+                                    "id": "50414e45-4c5f-5a45-5553-616fe0a83435",
                                     "encryption": "none"
                                 }
                             ]
@@ -898,12 +901,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "ws137.mydosss.ccwu.cc",
-                        "path": "/3b575ddc8596"
+                        "host": "u2z9itefuvzs.klznyaefurxs.workers.dev",
+                        "path": "/stream/PANEL_ZEUS/616fe0a83435"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "serverName": "u2z9itefuvzs.klznyaefurxs.workers.dev",
                         "fingerprint": "chrome",
                         "alpn": [
                             "http/1.1"
@@ -1015,7 +1018,7 @@
         "stats": {}
     },
     {
-        "remarks": "IPv6 oob CA 🇨🇦 | @Raydikalx | 084D30 | da0fc1",
+        "remarks": "IPv6 oob ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ = @ꜰxxɴᴇᴛ👻 | fedc1f",
         "version": {
             "min": "26.2.6"
         },
@@ -1075,7 +1078,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "48eb716d-6121-43c1-9dd2-9a2a25bf3178",
+                                    "id": "50414e45-4c5f-5a45-5553-616fe0a83435",
                                     "encryption": "none"
                                 }
                             ]
@@ -1085,12 +1088,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "ws137.mydosss.ccwu.cc",
-                        "path": "/3b575ddc8596"
+                        "host": "u2z9itefuvzs.klznyaefurxs.workers.dev",
+                        "path": "/stream/PANEL_ZEUS/616fe0a83435"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "serverName": "u2z9itefuvzs.klznyaefurxs.workers.dev",
                         "fingerprint": "hellochrome_120",
                         "alpn": [
                             "http/1.1"
@@ -1214,7 +1217,7 @@
         "stats": {}
     },
     {
-        "remarks": "F&F CA 🇨🇦 | @Raydikalx | F284AC | d76821",
+        "remarks": "F&F 🇫🇷 | @WhiteDNS | FR94|5.0MB/s|DNSOK|GPT⁺-FR | 641839",
         "version": {
             "min": "26.2.6"
         },
@@ -1274,7 +1277,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "44be961e-c60d-463c-86d6-50ce6d8866c5",
+                                    "id": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
                                     "encryption": "none"
                                 }
                             ]
@@ -1284,12 +1287,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "ws137.mydosss.ccwu.cc",
-                        "path": "/3b575ddc8596"
+                        "host": "fr-free.fastestrelay.com",
+                        "path": "/700gvl"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "serverName": "fr-free.fastestrelay.com",
                         "fingerprint": "unsafe",
                         "alpn": [
                             "http/1.1"
@@ -1435,7 +1438,7 @@
         "stats": {}
     },
     {
-        "remarks": "Sni-Spoofing CA 🇨🇦 | @Raydikalx | F284AC | ad8af0",
+        "remarks": "Sni-Spoofing 🇫🇷 | @WhiteDNS | FR94|5.0MB/s|DNSOK|GPT⁺-FR | c18235",
         "version": {
             "min": "26.2.6"
         },
@@ -1495,7 +1498,7 @@
                             "port": 40443,
                             "users": [
                                 {
-                                    "id": "44be961e-c60d-463c-86d6-50ce6d8866c5",
+                                    "id": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
                                     "encryption": "none"
                                 }
                             ]
@@ -1505,12 +1508,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "ws137.mydosss.ccwu.cc",
-                        "path": "/3b575ddc8596"
+                        "host": "fr-free.fastestrelay.com",
+                        "path": "/700gvl"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "serverName": "fr-free.fastestrelay.com",
                         "fingerprint": "chrome",
                         "alpn": [
                             "http/1.1"
@@ -1622,7 +1625,7 @@
         "stats": {}
     },
     {
-        "remarks": "IPv6 oob CA 🇨🇦 | @Raydikalx | F284AC | 21402a",
+        "remarks": "IPv6 oob 🇫🇷 | @WhiteDNS | FR94|5.0MB/s|DNSOK|GPT⁺-FR | c8df8f",
         "version": {
             "min": "26.2.6"
         },
@@ -1682,7 +1685,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "44be961e-c60d-463c-86d6-50ce6d8866c5",
+                                    "id": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
                                     "encryption": "none"
                                 }
                             ]
@@ -1692,12 +1695,1226 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "ws137.mydosss.ccwu.cc",
-                        "path": "/3b575ddc8596"
+                        "host": "fr-free.fastestrelay.com",
+                        "path": "/700gvl"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "serverName": "fr-free.fastestrelay.com",
+                        "fingerprint": "hellochrome_120",
+                        "alpn": [
+                            "http/1.1"
+                        ]
+                    },
+                    "finalmask": {
+                        "tcp": [
+                            {
+                                "type": "merge",
+                                "settings": {
+                                    "times": 100,
+                                    "delayMs": 30,
+                                    "maxBytes": 16384
+                                }
+                            }
+                        ]
+                    }
+                },
+                "tag": "proxy"
+            },
+            {
+                "protocol": "dns",
+                "settings": {
+                    "rules": [
+                        {
+                            "action": "hijack"
+                        }
+                    ]
+                },
+                "tag": "dns-out"
+            },
+            {
+                "protocol": "freedom",
+                "settings": {
+                    "domainStrategy": "UseIP"
+                },
+                "tag": "direct"
+            },
+            {
+                "protocol": "blackhole",
+                "settings": {
+                    "response": {
+                        "type": "http"
+                    }
+                },
+                "tag": "block"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {
+                    "inboundTag": [
+                        "mixed-in"
+                    ],
+                    "port": 53,
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "remote-dns"
+                    ],
+                    "outboundTag": "proxy",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "domain": [
+                        "geosite:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "geoip:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "network": "udp",
+                    "outboundTag": "block",
+                    "type": "field"
+                },
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        },
+        "policy": {
+            "levels": {
+                "0": {
+                    "connIdle": 300,
+                    "handshake": 4,
+                    "uplinkOnly": 1,
+                    "downlinkOnly": 1
+                }
+            },
+            "system": {
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }
+        },
+        "stats": {}
+    },
+    {
+        "remarks": "F&F DE 🇩🇪 | @Raydikalx | DE6C9D | d21305",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "none"
+        },
+        "dns": {
+            "servers": [
+                "fakedns",
+                {
+                    "address": "https://8.8.8.8/dns-query",
+                    "tag": "remote-dns"
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "listen": "127.0.0.1",
+                "port": 10808,
+                "protocol": "mixed",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls",
+                        "fakedns"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "mixed-in"
+            },
+            {
+                "listen": "127.0.0.1",
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "188.114.98.0",
+                            "port": 443,
+                            "users": [
+                                {
+                                    "id": "88e79aa6-f431-4453-8dcc-652a0c747198",
+                                    "encryption": "none"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "o685y.save-node.com",
+                        "path": "/api/se1k2rfxlsuer3ry4u6e84kl8rqp721p"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "o685y.save-node.com",
+                        "fingerprint": "unsafe",
+                        "alpn": [
+                            "http/1.1"
+                        ],
+                        "cipherSuites": "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
+                    },
+                    "finalmask": {
+                        "tcp": [
+                            {
+                                "type": "fragment",
+                                "settings": {
+                                    "packets": "tlshello",
+                                    "lengths": [
+                                        "0",
+                                        "104",
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "0"
+                                    ],
+                                    "maxSplit": "0"
+                                }
+                            },
+                            {
+                                "type": "fragment",
+                                "settings": {
+                                    "packets": "1-1",
+                                    "lengths": [
+                                        "114",
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "1"
+                                    ],
+                                    "maxSplit": "11"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "tag": "proxy"
+            },
+            {
+                "protocol": "dns",
+                "settings": {
+                    "rules": [
+                        {
+                            "action": "hijack"
+                        }
+                    ]
+                },
+                "tag": "dns-out"
+            },
+            {
+                "protocol": "freedom",
+                "settings": {
+                    "domainStrategy": "UseIP"
+                },
+                "tag": "direct"
+            },
+            {
+                "protocol": "blackhole",
+                "settings": {
+                    "response": {
+                        "type": "http"
+                    }
+                },
+                "tag": "block"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {
+                    "inboundTag": [
+                        "mixed-in"
+                    ],
+                    "port": 53,
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "remote-dns"
+                    ],
+                    "outboundTag": "proxy",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "domain": [
+                        "geosite:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "geoip:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "network": "udp",
+                    "outboundTag": "block",
+                    "type": "field"
+                },
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        },
+        "policy": {
+            "levels": {
+                "0": {
+                    "connIdle": 300,
+                    "handshake": 4,
+                    "uplinkOnly": 1,
+                    "downlinkOnly": 1
+                }
+            },
+            "system": {
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }
+        },
+        "stats": {}
+    },
+    {
+        "remarks": "Sni-Spoofing DE 🇩🇪 | @Raydikalx | DE6C9D | 0b6dc0",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "none"
+        },
+        "dns": {
+            "servers": [
+                "fakedns",
+                {
+                    "address": "https://8.8.8.8/dns-query",
+                    "tag": "remote-dns"
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "listen": "127.0.0.1",
+                "port": 10808,
+                "protocol": "mixed",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls",
+                        "fakedns"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "mixed-in"
+            },
+            {
+                "listen": "127.0.0.1",
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "127.0.0.1",
+                            "port": 40443,
+                            "users": [
+                                {
+                                    "id": "88e79aa6-f431-4453-8dcc-652a0c747198",
+                                    "encryption": "none"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "o685y.save-node.com",
+                        "path": "/api/se1k2rfxlsuer3ry4u6e84kl8rqp721p"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "o685y.save-node.com",
+                        "fingerprint": "chrome",
+                        "alpn": [
+                            "http/1.1"
+                        ]
+                    }
+                },
+                "tag": "proxy"
+            },
+            {
+                "protocol": "dns",
+                "settings": {
+                    "rules": [
+                        {
+                            "action": "hijack"
+                        }
+                    ]
+                },
+                "tag": "dns-out"
+            },
+            {
+                "protocol": "freedom",
+                "settings": {
+                    "domainStrategy": "UseIP"
+                },
+                "tag": "direct"
+            },
+            {
+                "protocol": "blackhole",
+                "settings": {
+                    "response": {
+                        "type": "http"
+                    }
+                },
+                "tag": "block"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {
+                    "inboundTag": [
+                        "mixed-in"
+                    ],
+                    "port": 53,
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "remote-dns"
+                    ],
+                    "outboundTag": "proxy",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "domain": [
+                        "geosite:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "geoip:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "network": "udp",
+                    "outboundTag": "block",
+                    "type": "field"
+                },
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        },
+        "policy": {
+            "levels": {
+                "0": {
+                    "connIdle": 300,
+                    "handshake": 4,
+                    "uplinkOnly": 1,
+                    "downlinkOnly": 1
+                }
+            },
+            "system": {
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }
+        },
+        "stats": {}
+    },
+    {
+        "remarks": "IPv6 oob DE 🇩🇪 | @Raydikalx | DE6C9D | 71d752",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "none"
+        },
+        "dns": {
+            "servers": [
+                "fakedns",
+                {
+                    "address": "https://8.8.8.8/dns-query",
+                    "tag": "remote-dns"
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "listen": "127.0.0.1",
+                "port": 10808,
+                "protocol": "mixed",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls",
+                        "fakedns"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "mixed-in"
+            },
+            {
+                "listen": "127.0.0.1",
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "2a06:98c1:3120::7",
+                            "port": 443,
+                            "users": [
+                                {
+                                    "id": "88e79aa6-f431-4453-8dcc-652a0c747198",
+                                    "encryption": "none"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "o685y.save-node.com",
+                        "path": "/api/se1k2rfxlsuer3ry4u6e84kl8rqp721p"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "o685y.save-node.com",
+                        "fingerprint": "hellochrome_120",
+                        "alpn": [
+                            "http/1.1"
+                        ]
+                    },
+                    "finalmask": {
+                        "tcp": [
+                            {
+                                "type": "merge",
+                                "settings": {
+                                    "times": 100,
+                                    "delayMs": 30,
+                                    "maxBytes": 16384
+                                }
+                            }
+                        ]
+                    }
+                },
+                "tag": "proxy"
+            },
+            {
+                "protocol": "dns",
+                "settings": {
+                    "rules": [
+                        {
+                            "action": "hijack"
+                        }
+                    ]
+                },
+                "tag": "dns-out"
+            },
+            {
+                "protocol": "freedom",
+                "settings": {
+                    "domainStrategy": "UseIP"
+                },
+                "tag": "direct"
+            },
+            {
+                "protocol": "blackhole",
+                "settings": {
+                    "response": {
+                        "type": "http"
+                    }
+                },
+                "tag": "block"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {
+                    "inboundTag": [
+                        "mixed-in"
+                    ],
+                    "port": 53,
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "remote-dns"
+                    ],
+                    "outboundTag": "proxy",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "domain": [
+                        "geosite:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "geoip:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "network": "udp",
+                    "outboundTag": "block",
+                    "type": "field"
+                },
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        },
+        "policy": {
+            "levels": {
+                "0": {
+                    "connIdle": 300,
+                    "handshake": 4,
+                    "uplinkOnly": 1,
+                    "downlinkOnly": 1
+                }
+            },
+            "system": {
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }
+        },
+        "stats": {}
+    },
+    {
+        "remarks": "F&F CA 🇨🇦 | @Raydikalx | F7FE12 | 6b3ff3",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "none"
+        },
+        "dns": {
+            "servers": [
+                "fakedns",
+                {
+                    "address": "https://8.8.8.8/dns-query",
+                    "tag": "remote-dns"
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "listen": "127.0.0.1",
+                "port": 10808,
+                "protocol": "mixed",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls",
+                        "fakedns"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "mixed-in"
+            },
+            {
+                "listen": "127.0.0.1",
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "188.114.98.0",
+                            "port": 443,
+                            "users": [
+                                {
+                                    "id": "b61580cd-bc64-466c-bde9-3533aed885d0",
+                                    "encryption": "none"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "httpupgrade",
+                    "httpupgradeSettings": {
+                        "path": "/user",
+                        "host": "eu.workingserverpro.qzz.io"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "eu.workingserverpro.qzz.io",
+                        "fingerprint": "unsafe",
+                        "alpn": [
+                            "http/1.1"
+                        ],
+                        "cipherSuites": "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
+                    },
+                    "finalmask": {
+                        "tcp": [
+                            {
+                                "type": "fragment",
+                                "settings": {
+                                    "packets": "tlshello",
+                                    "lengths": [
+                                        "0",
+                                        "104",
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "0"
+                                    ],
+                                    "maxSplit": "0"
+                                }
+                            },
+                            {
+                                "type": "fragment",
+                                "settings": {
+                                    "packets": "1-1",
+                                    "lengths": [
+                                        "114",
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "1"
+                                    ],
+                                    "maxSplit": "11"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "tag": "proxy"
+            },
+            {
+                "protocol": "dns",
+                "settings": {
+                    "rules": [
+                        {
+                            "action": "hijack"
+                        }
+                    ]
+                },
+                "tag": "dns-out"
+            },
+            {
+                "protocol": "freedom",
+                "settings": {
+                    "domainStrategy": "UseIP"
+                },
+                "tag": "direct"
+            },
+            {
+                "protocol": "blackhole",
+                "settings": {
+                    "response": {
+                        "type": "http"
+                    }
+                },
+                "tag": "block"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {
+                    "inboundTag": [
+                        "mixed-in"
+                    ],
+                    "port": 53,
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "remote-dns"
+                    ],
+                    "outboundTag": "proxy",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "domain": [
+                        "geosite:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "geoip:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "network": "udp",
+                    "outboundTag": "block",
+                    "type": "field"
+                },
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        },
+        "policy": {
+            "levels": {
+                "0": {
+                    "connIdle": 300,
+                    "handshake": 4,
+                    "uplinkOnly": 1,
+                    "downlinkOnly": 1
+                }
+            },
+            "system": {
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }
+        },
+        "stats": {}
+    },
+    {
+        "remarks": "Sni-Spoofing CA 🇨🇦 | @Raydikalx | F7FE12 | 780596",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "none"
+        },
+        "dns": {
+            "servers": [
+                "fakedns",
+                {
+                    "address": "https://8.8.8.8/dns-query",
+                    "tag": "remote-dns"
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "listen": "127.0.0.1",
+                "port": 10808,
+                "protocol": "mixed",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls",
+                        "fakedns"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "mixed-in"
+            },
+            {
+                "listen": "127.0.0.1",
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "127.0.0.1",
+                            "port": 40443,
+                            "users": [
+                                {
+                                    "id": "b61580cd-bc64-466c-bde9-3533aed885d0",
+                                    "encryption": "none"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "httpupgrade",
+                    "httpupgradeSettings": {
+                        "path": "/user",
+                        "host": "eu.workingserverpro.qzz.io"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "eu.workingserverpro.qzz.io",
+                        "fingerprint": "chrome",
+                        "alpn": [
+                            "http/1.1"
+                        ]
+                    }
+                },
+                "tag": "proxy"
+            },
+            {
+                "protocol": "dns",
+                "settings": {
+                    "rules": [
+                        {
+                            "action": "hijack"
+                        }
+                    ]
+                },
+                "tag": "dns-out"
+            },
+            {
+                "protocol": "freedom",
+                "settings": {
+                    "domainStrategy": "UseIP"
+                },
+                "tag": "direct"
+            },
+            {
+                "protocol": "blackhole",
+                "settings": {
+                    "response": {
+                        "type": "http"
+                    }
+                },
+                "tag": "block"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {
+                    "inboundTag": [
+                        "mixed-in"
+                    ],
+                    "port": 53,
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "remote-dns"
+                    ],
+                    "outboundTag": "proxy",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "domain": [
+                        "geosite:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "geoip:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "network": "udp",
+                    "outboundTag": "block",
+                    "type": "field"
+                },
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        },
+        "policy": {
+            "levels": {
+                "0": {
+                    "connIdle": 300,
+                    "handshake": 4,
+                    "uplinkOnly": 1,
+                    "downlinkOnly": 1
+                }
+            },
+            "system": {
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }
+        },
+        "stats": {}
+    },
+    {
+        "remarks": "IPv6 oob CA 🇨🇦 | @Raydikalx | F7FE12 | a1886e",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "none"
+        },
+        "dns": {
+            "servers": [
+                "fakedns",
+                {
+                    "address": "https://8.8.8.8/dns-query",
+                    "tag": "remote-dns"
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "listen": "127.0.0.1",
+                "port": 10808,
+                "protocol": "mixed",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls",
+                        "fakedns"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "mixed-in"
+            },
+            {
+                "listen": "127.0.0.1",
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "2a06:98c1:3120::7",
+                            "port": 443,
+                            "users": [
+                                {
+                                    "id": "b61580cd-bc64-466c-bde9-3533aed885d0",
+                                    "encryption": "none"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "httpupgrade",
+                    "httpupgradeSettings": {
+                        "path": "/user",
+                        "host": "eu.workingserverpro.qzz.io"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "eu.workingserverpro.qzz.io",
                         "fingerprint": "hellochrome_120",
                         "alpn": [
                             "http/1.1"
@@ -2290,6 +3507,613 @@
                             "users": [
                                 {
                                     "id": "369360e9-ff90-43c3-b81b-ebac420fce73",
+                                    "encryption": "none"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "ws137.mydosss.ccwu.cc",
+                        "path": "/3b575ddc8596"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "fingerprint": "hellochrome_120",
+                        "alpn": [
+                            "http/1.1"
+                        ]
+                    },
+                    "finalmask": {
+                        "tcp": [
+                            {
+                                "type": "merge",
+                                "settings": {
+                                    "times": 100,
+                                    "delayMs": 30,
+                                    "maxBytes": 16384
+                                }
+                            }
+                        ]
+                    }
+                },
+                "tag": "proxy"
+            },
+            {
+                "protocol": "dns",
+                "settings": {
+                    "rules": [
+                        {
+                            "action": "hijack"
+                        }
+                    ]
+                },
+                "tag": "dns-out"
+            },
+            {
+                "protocol": "freedom",
+                "settings": {
+                    "domainStrategy": "UseIP"
+                },
+                "tag": "direct"
+            },
+            {
+                "protocol": "blackhole",
+                "settings": {
+                    "response": {
+                        "type": "http"
+                    }
+                },
+                "tag": "block"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {
+                    "inboundTag": [
+                        "mixed-in"
+                    ],
+                    "port": 53,
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "remote-dns"
+                    ],
+                    "outboundTag": "proxy",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "domain": [
+                        "geosite:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "geoip:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "network": "udp",
+                    "outboundTag": "block",
+                    "type": "field"
+                },
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        },
+        "policy": {
+            "levels": {
+                "0": {
+                    "connIdle": 300,
+                    "handshake": 4,
+                    "uplinkOnly": 1,
+                    "downlinkOnly": 1
+                }
+            },
+            "system": {
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }
+        },
+        "stats": {}
+    },
+    {
+        "remarks": "F&F CA 🇨🇦 | @Raydikalx | ACA98C | db8fe5",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "none"
+        },
+        "dns": {
+            "servers": [
+                "fakedns",
+                {
+                    "address": "https://8.8.8.8/dns-query",
+                    "tag": "remote-dns"
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "listen": "127.0.0.1",
+                "port": 10808,
+                "protocol": "mixed",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls",
+                        "fakedns"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "mixed-in"
+            },
+            {
+                "listen": "127.0.0.1",
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "188.114.98.0",
+                            "port": 443,
+                            "users": [
+                                {
+                                    "id": "56066a03-d283-48cf-8120-eb8d810025cb",
+                                    "encryption": "none"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "ws137.mydosss.ccwu.cc",
+                        "path": "/3b575ddc8596"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "fingerprint": "unsafe",
+                        "alpn": [
+                            "http/1.1"
+                        ],
+                        "cipherSuites": "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
+                    },
+                    "finalmask": {
+                        "tcp": [
+                            {
+                                "type": "fragment",
+                                "settings": {
+                                    "packets": "tlshello",
+                                    "lengths": [
+                                        "0",
+                                        "104",
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "0"
+                                    ],
+                                    "maxSplit": "0"
+                                }
+                            },
+                            {
+                                "type": "fragment",
+                                "settings": {
+                                    "packets": "1-1",
+                                    "lengths": [
+                                        "114",
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "1"
+                                    ],
+                                    "maxSplit": "11"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "tag": "proxy"
+            },
+            {
+                "protocol": "dns",
+                "settings": {
+                    "rules": [
+                        {
+                            "action": "hijack"
+                        }
+                    ]
+                },
+                "tag": "dns-out"
+            },
+            {
+                "protocol": "freedom",
+                "settings": {
+                    "domainStrategy": "UseIP"
+                },
+                "tag": "direct"
+            },
+            {
+                "protocol": "blackhole",
+                "settings": {
+                    "response": {
+                        "type": "http"
+                    }
+                },
+                "tag": "block"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {
+                    "inboundTag": [
+                        "mixed-in"
+                    ],
+                    "port": 53,
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "remote-dns"
+                    ],
+                    "outboundTag": "proxy",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "domain": [
+                        "geosite:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "geoip:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "network": "udp",
+                    "outboundTag": "block",
+                    "type": "field"
+                },
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        },
+        "policy": {
+            "levels": {
+                "0": {
+                    "connIdle": 300,
+                    "handshake": 4,
+                    "uplinkOnly": 1,
+                    "downlinkOnly": 1
+                }
+            },
+            "system": {
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }
+        },
+        "stats": {}
+    },
+    {
+        "remarks": "Sni-Spoofing CA 🇨🇦 | @Raydikalx | ACA98C | 55bac8",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "none"
+        },
+        "dns": {
+            "servers": [
+                "fakedns",
+                {
+                    "address": "https://8.8.8.8/dns-query",
+                    "tag": "remote-dns"
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "listen": "127.0.0.1",
+                "port": 10808,
+                "protocol": "mixed",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls",
+                        "fakedns"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "mixed-in"
+            },
+            {
+                "listen": "127.0.0.1",
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "127.0.0.1",
+                            "port": 40443,
+                            "users": [
+                                {
+                                    "id": "56066a03-d283-48cf-8120-eb8d810025cb",
+                                    "encryption": "none"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "ws137.mydosss.ccwu.cc",
+                        "path": "/3b575ddc8596"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "fingerprint": "chrome",
+                        "alpn": [
+                            "http/1.1"
+                        ]
+                    }
+                },
+                "tag": "proxy"
+            },
+            {
+                "protocol": "dns",
+                "settings": {
+                    "rules": [
+                        {
+                            "action": "hijack"
+                        }
+                    ]
+                },
+                "tag": "dns-out"
+            },
+            {
+                "protocol": "freedom",
+                "settings": {
+                    "domainStrategy": "UseIP"
+                },
+                "tag": "direct"
+            },
+            {
+                "protocol": "blackhole",
+                "settings": {
+                    "response": {
+                        "type": "http"
+                    }
+                },
+                "tag": "block"
+            }
+        ],
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {
+                    "inboundTag": [
+                        "mixed-in"
+                    ],
+                    "port": 53,
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "remote-dns"
+                    ],
+                    "outboundTag": "proxy",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "domain": [
+                        "geosite:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "geoip:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "network": "udp",
+                    "outboundTag": "block",
+                    "type": "field"
+                },
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        },
+        "policy": {
+            "levels": {
+                "0": {
+                    "connIdle": 300,
+                    "handshake": 4,
+                    "uplinkOnly": 1,
+                    "downlinkOnly": 1
+                }
+            },
+            "system": {
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }
+        },
+        "stats": {}
+    },
+    {
+        "remarks": "IPv6 oob CA 🇨🇦 | @Raydikalx | ACA98C | f64e9d",
+        "version": {
+            "min": "26.2.6"
+        },
+        "log": {
+            "loglevel": "none"
+        },
+        "dns": {
+            "servers": [
+                "fakedns",
+                {
+                    "address": "https://8.8.8.8/dns-query",
+                    "tag": "remote-dns"
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "listen": "127.0.0.1",
+                "port": 10808,
+                "protocol": "mixed",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls",
+                        "fakedns"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "mixed-in"
+            },
+            {
+                "listen": "127.0.0.1",
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "2a06:98c1:3120::7",
+                            "port": 443,
+                            "users": [
+                                {
+                                    "id": "56066a03-d283-48cf-8120-eb8d810025cb",
                                     "encryption": "none"
                                 }
                             ]
@@ -3035,7 +4859,7 @@
         "stats": {}
     },
     {
-        "remarks": "F&F CA 🇨🇦 | @Raydikalx | ACA98C | db8fe5",
+        "remarks": "F&F CF中转_1117148638 | 5464a3",
         "version": {
             "min": "26.2.6"
         },
@@ -3256,7 +5080,7 @@
         "stats": {}
     },
     {
-        "remarks": "Sni-Spoofing CA 🇨🇦 | @Raydikalx | ACA98C | 55bac8",
+        "remarks": "Sni-Spoofing CF中转_1117148638 | 20a4c2",
         "version": {
             "min": "26.2.6"
         },
@@ -3443,7 +5267,7 @@
         "stats": {}
     },
     {
-        "remarks": "IPv6 oob CA 🇨🇦 | @Raydikalx | ACA98C | f64e9d",
+        "remarks": "IPv6 oob CF中转_1117148638 | 386bb4",
         "version": {
             "min": "26.2.6"
         },
@@ -3642,7 +5466,7 @@
         "stats": {}
     },
     {
-        "remarks": "F&F @DeltaKroneckerGithub | 90eb4d",
+        "remarks": "F&F CF中转_1117148636 | 2c58b5",
         "version": {
             "min": "26.2.6"
         },
@@ -3702,7 +5526,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+                                    "id": "7e0e7ca3-7aab-420e-9b40-c15a228ef33a",
                                     "encryption": "none"
                                 }
                             ]
@@ -3712,12 +5536,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "jp3.yohototo.top",
-                        "path": "/tyxyws"
+                        "host": "ws137.mydosss.ccwu.cc",
+                        "path": "/3b575ddc8596"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "jp3.yohototo.top",
+                        "serverName": "ws137.mydosss.ccwu.cc",
                         "fingerprint": "unsafe",
                         "alpn": [
                             "http/1.1"
@@ -3863,7 +5687,7 @@
         "stats": {}
     },
     {
-        "remarks": "Sni-Spoofing @DeltaKroneckerGithub | 5b0f77",
+        "remarks": "Sni-Spoofing CF中转_1117148636 | 7eb8d0",
         "version": {
             "min": "26.2.6"
         },
@@ -3923,7 +5747,7 @@
                             "port": 40443,
                             "users": [
                                 {
-                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+                                    "id": "7e0e7ca3-7aab-420e-9b40-c15a228ef33a",
                                     "encryption": "none"
                                 }
                             ]
@@ -3933,12 +5757,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "jp3.yohototo.top",
-                        "path": "/tyxyws"
+                        "host": "ws137.mydosss.ccwu.cc",
+                        "path": "/3b575ddc8596"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "jp3.yohototo.top",
+                        "serverName": "ws137.mydosss.ccwu.cc",
                         "fingerprint": "chrome",
                         "alpn": [
                             "http/1.1"
@@ -4050,7 +5874,7 @@
         "stats": {}
     },
     {
-        "remarks": "IPv6 oob @DeltaKroneckerGithub | 65b722",
+        "remarks": "IPv6 oob CF中转_1117148636 | ff1994",
         "version": {
             "min": "26.2.6"
         },
@@ -4110,7 +5934,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+                                    "id": "7e0e7ca3-7aab-420e-9b40-c15a228ef33a",
                                     "encryption": "none"
                                 }
                             ]
@@ -4120,12 +5944,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "jp3.yohototo.top",
-                        "path": "/tyxyws"
+                        "host": "ws137.mydosss.ccwu.cc",
+                        "path": "/3b575ddc8596"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "jp3.yohototo.top",
+                        "serverName": "ws137.mydosss.ccwu.cc",
                         "fingerprint": "hellochrome_120",
                         "alpn": [
                             "http/1.1"
@@ -4309,22 +6133,23 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "1af5253b-75e6-4e2c-8b9e-2b7b92dbb845",
-                                    "encryption": "none"
+                                    "id": "f7a9b27c-fd3c-4177-9f66-8be4dd726d0b",
+                                    "encryption": "none",
+                                    "flow": "xtls-rprx-vision"
                                 }
                             ]
                         }
                     ]
                 },
                 "streamSettings": {
-                    "network": "httpupgrade",
-                    "httpupgradeSettings": {
-                        "path": "/msn",
-                        "host": "ded2http.samcdn.shop"
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "rainman.exploring.cyou",
+                        "path": "/t.me-SubGift"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ded2http.samcdn.shop",
+                        "serverName": "rainman.exploring.cyou",
                         "fingerprint": "unsafe",
                         "alpn": [
                             "http/1.1"
@@ -4376,22 +6201,23 @@
                             "port": 40443,
                             "users": [
                                 {
-                                    "id": "1af5253b-75e6-4e2c-8b9e-2b7b92dbb845",
-                                    "encryption": "none"
+                                    "id": "f7a9b27c-fd3c-4177-9f66-8be4dd726d0b",
+                                    "encryption": "none",
+                                    "flow": "xtls-rprx-vision"
                                 }
                             ]
                         }
                     ]
                 },
                 "streamSettings": {
-                    "network": "httpupgrade",
-                    "httpupgradeSettings": {
-                        "path": "/msn",
-                        "host": "ded2http.samcdn.shop"
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "rainman.exploring.cyou",
+                        "path": "/t.me-SubGift"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ded2http.samcdn.shop",
+                        "serverName": "rainman.exploring.cyou",
                         "fingerprint": "chrome",
                         "alpn": [
                             "http/1.1"
@@ -4409,22 +6235,23 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "1af5253b-75e6-4e2c-8b9e-2b7b92dbb845",
-                                    "encryption": "none"
+                                    "id": "f7a9b27c-fd3c-4177-9f66-8be4dd726d0b",
+                                    "encryption": "none",
+                                    "flow": "xtls-rprx-vision"
                                 }
                             ]
                         }
                     ]
                 },
                 "streamSettings": {
-                    "network": "httpupgrade",
-                    "httpupgradeSettings": {
-                        "path": "/msn",
-                        "host": "ded2http.samcdn.shop"
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "rainman.exploring.cyou",
+                        "path": "/t.me-SubGift"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ded2http.samcdn.shop",
+                        "serverName": "rainman.exploring.cyou",
                         "fingerprint": "hellochrome_120",
                         "alpn": [
                             "http/1.1"
@@ -4454,7 +6281,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "48eb716d-6121-43c1-9dd2-9a2a25bf3178",
+                                    "id": "50414e45-4c5f-5a45-5553-616fe0a83435",
                                     "encryption": "none"
                                 }
                             ]
@@ -4464,12 +6291,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "ws137.mydosss.ccwu.cc",
-                        "path": "/3b575ddc8596"
+                        "host": "u2z9itefuvzs.klznyaefurxs.workers.dev",
+                        "path": "/stream/PANEL_ZEUS/616fe0a83435"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "serverName": "u2z9itefuvzs.klznyaefurxs.workers.dev",
                         "fingerprint": "unsafe",
                         "alpn": [
                             "http/1.1"
@@ -4521,7 +6348,7 @@
                             "port": 40443,
                             "users": [
                                 {
-                                    "id": "48eb716d-6121-43c1-9dd2-9a2a25bf3178",
+                                    "id": "50414e45-4c5f-5a45-5553-616fe0a83435",
                                     "encryption": "none"
                                 }
                             ]
@@ -4531,12 +6358,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "ws137.mydosss.ccwu.cc",
-                        "path": "/3b575ddc8596"
+                        "host": "u2z9itefuvzs.klznyaefurxs.workers.dev",
+                        "path": "/stream/PANEL_ZEUS/616fe0a83435"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "serverName": "u2z9itefuvzs.klznyaefurxs.workers.dev",
                         "fingerprint": "chrome",
                         "alpn": [
                             "http/1.1"
@@ -4554,7 +6381,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "48eb716d-6121-43c1-9dd2-9a2a25bf3178",
+                                    "id": "50414e45-4c5f-5a45-5553-616fe0a83435",
                                     "encryption": "none"
                                 }
                             ]
@@ -4564,12 +6391,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "ws137.mydosss.ccwu.cc",
-                        "path": "/3b575ddc8596"
+                        "host": "u2z9itefuvzs.klznyaefurxs.workers.dev",
+                        "path": "/stream/PANEL_ZEUS/616fe0a83435"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "serverName": "u2z9itefuvzs.klznyaefurxs.workers.dev",
                         "fingerprint": "hellochrome_120",
                         "alpn": [
                             "http/1.1"
@@ -4599,7 +6426,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "44be961e-c60d-463c-86d6-50ce6d8866c5",
+                                    "id": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
                                     "encryption": "none"
                                 }
                             ]
@@ -4609,12 +6436,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "ws137.mydosss.ccwu.cc",
-                        "path": "/3b575ddc8596"
+                        "host": "fr-free.fastestrelay.com",
+                        "path": "/700gvl"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "serverName": "fr-free.fastestrelay.com",
                         "fingerprint": "unsafe",
                         "alpn": [
                             "http/1.1"
@@ -4666,7 +6493,7 @@
                             "port": 40443,
                             "users": [
                                 {
-                                    "id": "44be961e-c60d-463c-86d6-50ce6d8866c5",
+                                    "id": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
                                     "encryption": "none"
                                 }
                             ]
@@ -4676,12 +6503,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "ws137.mydosss.ccwu.cc",
-                        "path": "/3b575ddc8596"
+                        "host": "fr-free.fastestrelay.com",
+                        "path": "/700gvl"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "serverName": "fr-free.fastestrelay.com",
                         "fingerprint": "chrome",
                         "alpn": [
                             "http/1.1"
@@ -4699,7 +6526,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "44be961e-c60d-463c-86d6-50ce6d8866c5",
+                                    "id": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
                                     "encryption": "none"
                                 }
                             ]
@@ -4709,12 +6536,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "ws137.mydosss.ccwu.cc",
-                        "path": "/3b575ddc8596"
+                        "host": "fr-free.fastestrelay.com",
+                        "path": "/700gvl"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "serverName": "fr-free.fastestrelay.com",
                         "fingerprint": "hellochrome_120",
                         "alpn": [
                             "http/1.1"
@@ -4744,7 +6571,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "369360e9-ff90-43c3-b81b-ebac420fce73",
+                                    "id": "88e79aa6-f431-4453-8dcc-652a0c747198",
                                     "encryption": "none"
                                 }
                             ]
@@ -4754,12 +6581,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "ws137.mydosss.ccwu.cc",
-                        "path": "/3b575ddc8596"
+                        "host": "o685y.save-node.com",
+                        "path": "/api/se1k2rfxlsuer3ry4u6e84kl8rqp721p"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "serverName": "o685y.save-node.com",
                         "fingerprint": "unsafe",
                         "alpn": [
                             "http/1.1"
@@ -4811,7 +6638,7 @@
                             "port": 40443,
                             "users": [
                                 {
-                                    "id": "369360e9-ff90-43c3-b81b-ebac420fce73",
+                                    "id": "88e79aa6-f431-4453-8dcc-652a0c747198",
                                     "encryption": "none"
                                 }
                             ]
@@ -4821,12 +6648,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "ws137.mydosss.ccwu.cc",
-                        "path": "/3b575ddc8596"
+                        "host": "o685y.save-node.com",
+                        "path": "/api/se1k2rfxlsuer3ry4u6e84kl8rqp721p"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "serverName": "o685y.save-node.com",
                         "fingerprint": "chrome",
                         "alpn": [
                             "http/1.1"
@@ -4844,7 +6671,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "369360e9-ff90-43c3-b81b-ebac420fce73",
+                                    "id": "88e79aa6-f431-4453-8dcc-652a0c747198",
                                     "encryption": "none"
                                 }
                             ]
@@ -4854,12 +6681,12 @@
                 "streamSettings": {
                     "network": "ws",
                     "wsSettings": {
-                        "host": "ws137.mydosss.ccwu.cc",
-                        "path": "/3b575ddc8596"
+                        "host": "o685y.save-node.com",
+                        "path": "/api/se1k2rfxlsuer3ry4u6e84kl8rqp721p"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "serverName": "o685y.save-node.com",
                         "fingerprint": "hellochrome_120",
                         "alpn": [
                             "http/1.1"
@@ -4889,7 +6716,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+                                    "id": "b61580cd-bc64-466c-bde9-3533aed885d0",
                                     "encryption": "none"
                                 }
                             ]
@@ -4897,14 +6724,14 @@
                     ]
                 },
                 "streamSettings": {
-                    "network": "ws",
-                    "wsSettings": {
-                        "host": "jp3.yohototo.top",
-                        "path": "/tyxyws"
+                    "network": "httpupgrade",
+                    "httpupgradeSettings": {
+                        "path": "/user",
+                        "host": "eu.workingserverpro.qzz.io"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "jp3.yohototo.top",
+                        "serverName": "eu.workingserverpro.qzz.io",
                         "fingerprint": "unsafe",
                         "alpn": [
                             "http/1.1"
@@ -4956,7 +6783,7 @@
                             "port": 40443,
                             "users": [
                                 {
-                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+                                    "id": "b61580cd-bc64-466c-bde9-3533aed885d0",
                                     "encryption": "none"
                                 }
                             ]
@@ -4964,14 +6791,14 @@
                     ]
                 },
                 "streamSettings": {
-                    "network": "ws",
-                    "wsSettings": {
-                        "host": "jp3.yohototo.top",
-                        "path": "/tyxyws"
+                    "network": "httpupgrade",
+                    "httpupgradeSettings": {
+                        "path": "/user",
+                        "host": "eu.workingserverpro.qzz.io"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "jp3.yohototo.top",
+                        "serverName": "eu.workingserverpro.qzz.io",
                         "fingerprint": "chrome",
                         "alpn": [
                             "http/1.1"
@@ -4989,7 +6816,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+                                    "id": "b61580cd-bc64-466c-bde9-3533aed885d0",
                                     "encryption": "none"
                                 }
                             ]
@@ -4997,14 +6824,14 @@
                     ]
                 },
                 "streamSettings": {
-                    "network": "ws",
-                    "wsSettings": {
-                        "host": "jp3.yohototo.top",
-                        "path": "/tyxyws"
+                    "network": "httpupgrade",
+                    "httpupgradeSettings": {
+                        "path": "/user",
+                        "host": "eu.workingserverpro.qzz.io"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "jp3.yohototo.top",
+                        "serverName": "eu.workingserverpro.qzz.io",
                         "fingerprint": "hellochrome_120",
                         "alpn": [
                             "http/1.1"
@@ -5034,7 +6861,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "56066a03-d283-48cf-8120-eb8d810025cb",
+                                    "id": "369360e9-ff90-43c3-b81b-ebac420fce73",
                                     "encryption": "none"
                                 }
                             ]
@@ -5101,7 +6928,7 @@
                             "port": 40443,
                             "users": [
                                 {
-                                    "id": "56066a03-d283-48cf-8120-eb8d810025cb",
+                                    "id": "369360e9-ff90-43c3-b81b-ebac420fce73",
                                     "encryption": "none"
                                 }
                             ]
@@ -5124,6 +6951,151 @@
                     }
                 },
                 "tag": "proxy-17"
+            },
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "2a06:98c1:3120::7",
+                            "port": 443,
+                            "users": [
+                                {
+                                    "id": "369360e9-ff90-43c3-b81b-ebac420fce73",
+                                    "encryption": "none"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "ws137.mydosss.ccwu.cc",
+                        "path": "/3b575ddc8596"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "fingerprint": "hellochrome_120",
+                        "alpn": [
+                            "http/1.1"
+                        ]
+                    },
+                    "finalmask": {
+                        "tcp": [
+                            {
+                                "type": "merge",
+                                "settings": {
+                                    "times": 100,
+                                    "delayMs": 30,
+                                    "maxBytes": 16384
+                                }
+                            }
+                        ]
+                    }
+                },
+                "tag": "proxy-18"
+            },
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "188.114.98.0",
+                            "port": 443,
+                            "users": [
+                                {
+                                    "id": "56066a03-d283-48cf-8120-eb8d810025cb",
+                                    "encryption": "none"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "ws137.mydosss.ccwu.cc",
+                        "path": "/3b575ddc8596"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "fingerprint": "unsafe",
+                        "alpn": [
+                            "http/1.1"
+                        ],
+                        "cipherSuites": "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
+                    },
+                    "finalmask": {
+                        "tcp": [
+                            {
+                                "type": "fragment",
+                                "settings": {
+                                    "packets": "tlshello",
+                                    "lengths": [
+                                        "0",
+                                        "104",
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "0"
+                                    ],
+                                    "maxSplit": "0"
+                                }
+                            },
+                            {
+                                "type": "fragment",
+                                "settings": {
+                                    "packets": "1-1",
+                                    "lengths": [
+                                        "114",
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "1"
+                                    ],
+                                    "maxSplit": "11"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "tag": "proxy-19"
+            },
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "127.0.0.1",
+                            "port": 40443,
+                            "users": [
+                                {
+                                    "id": "56066a03-d283-48cf-8120-eb8d810025cb",
+                                    "encryption": "none"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "ws137.mydosss.ccwu.cc",
+                        "path": "/3b575ddc8596"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "fingerprint": "chrome",
+                        "alpn": [
+                            "http/1.1"
+                        ]
+                    }
+                },
+                "tag": "proxy-20"
             },
             {
                 "protocol": "vless",
@@ -5168,7 +7140,7 @@
                         ]
                     }
                 },
-                "tag": "proxy-18"
+                "tag": "proxy-21"
             },
             {
                 "protocol": "vless",
@@ -5235,7 +7207,7 @@
                         ]
                     }
                 },
-                "tag": "proxy-19"
+                "tag": "proxy-22"
             },
             {
                 "protocol": "vless",
@@ -5268,7 +7240,7 @@
                         ]
                     }
                 },
-                "tag": "proxy-20"
+                "tag": "proxy-23"
             },
             {
                 "protocol": "vless",
@@ -5313,7 +7285,297 @@
                         ]
                     }
                 },
-                "tag": "proxy-21"
+                "tag": "proxy-24"
+            },
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "188.114.98.0",
+                            "port": 443,
+                            "users": [
+                                {
+                                    "id": "56066a03-d283-48cf-8120-eb8d810025cb",
+                                    "encryption": "none"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "ws137.mydosss.ccwu.cc",
+                        "path": "/3b575ddc8596"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "fingerprint": "unsafe",
+                        "alpn": [
+                            "http/1.1"
+                        ],
+                        "cipherSuites": "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
+                    },
+                    "finalmask": {
+                        "tcp": [
+                            {
+                                "type": "fragment",
+                                "settings": {
+                                    "packets": "tlshello",
+                                    "lengths": [
+                                        "0",
+                                        "104",
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "0"
+                                    ],
+                                    "maxSplit": "0"
+                                }
+                            },
+                            {
+                                "type": "fragment",
+                                "settings": {
+                                    "packets": "1-1",
+                                    "lengths": [
+                                        "114",
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "1"
+                                    ],
+                                    "maxSplit": "11"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "tag": "proxy-25"
+            },
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "127.0.0.1",
+                            "port": 40443,
+                            "users": [
+                                {
+                                    "id": "56066a03-d283-48cf-8120-eb8d810025cb",
+                                    "encryption": "none"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "ws137.mydosss.ccwu.cc",
+                        "path": "/3b575ddc8596"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "fingerprint": "chrome",
+                        "alpn": [
+                            "http/1.1"
+                        ]
+                    }
+                },
+                "tag": "proxy-26"
+            },
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "2a06:98c1:3120::7",
+                            "port": 443,
+                            "users": [
+                                {
+                                    "id": "56066a03-d283-48cf-8120-eb8d810025cb",
+                                    "encryption": "none"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "ws137.mydosss.ccwu.cc",
+                        "path": "/3b575ddc8596"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "fingerprint": "hellochrome_120",
+                        "alpn": [
+                            "http/1.1"
+                        ]
+                    },
+                    "finalmask": {
+                        "tcp": [
+                            {
+                                "type": "merge",
+                                "settings": {
+                                    "times": 100,
+                                    "delayMs": 30,
+                                    "maxBytes": 16384
+                                }
+                            }
+                        ]
+                    }
+                },
+                "tag": "proxy-27"
+            },
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "188.114.98.0",
+                            "port": 443,
+                            "users": [
+                                {
+                                    "id": "7e0e7ca3-7aab-420e-9b40-c15a228ef33a",
+                                    "encryption": "none"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "ws137.mydosss.ccwu.cc",
+                        "path": "/3b575ddc8596"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "fingerprint": "unsafe",
+                        "alpn": [
+                            "http/1.1"
+                        ],
+                        "cipherSuites": "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
+                    },
+                    "finalmask": {
+                        "tcp": [
+                            {
+                                "type": "fragment",
+                                "settings": {
+                                    "packets": "tlshello",
+                                    "lengths": [
+                                        "0",
+                                        "104",
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "0"
+                                    ],
+                                    "maxSplit": "0"
+                                }
+                            },
+                            {
+                                "type": "fragment",
+                                "settings": {
+                                    "packets": "1-1",
+                                    "lengths": [
+                                        "114",
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "1"
+                                    ],
+                                    "maxSplit": "11"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "tag": "proxy-28"
+            },
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "127.0.0.1",
+                            "port": 40443,
+                            "users": [
+                                {
+                                    "id": "7e0e7ca3-7aab-420e-9b40-c15a228ef33a",
+                                    "encryption": "none"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "ws137.mydosss.ccwu.cc",
+                        "path": "/3b575ddc8596"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "fingerprint": "chrome",
+                        "alpn": [
+                            "http/1.1"
+                        ]
+                    }
+                },
+                "tag": "proxy-29"
+            },
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "2a06:98c1:3120::7",
+                            "port": 443,
+                            "users": [
+                                {
+                                    "id": "7e0e7ca3-7aab-420e-9b40-c15a228ef33a",
+                                    "encryption": "none"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "wsSettings": {
+                        "host": "ws137.mydosss.ccwu.cc",
+                        "path": "/3b575ddc8596"
+                    },
+                    "security": "tls",
+                    "tlsSettings": {
+                        "serverName": "ws137.mydosss.ccwu.cc",
+                        "fingerprint": "hellochrome_120",
+                        "alpn": [
+                            "http/1.1"
+                        ]
+                    },
+                    "finalmask": {
+                        "tcp": [
+                            {
+                                "type": "merge",
+                                "settings": {
+                                    "times": 100,
+                                    "delayMs": 30,
+                                    "maxBytes": 16384
+                                }
+                            }
+                        ]
+                    }
+                },
+                "tag": "proxy-30"
             },
             {
                 "protocol": "dns",
